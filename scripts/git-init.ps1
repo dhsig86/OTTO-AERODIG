@@ -33,11 +33,17 @@ feat(scaffold): OTTO Aerodigestive Hub — estrutura inicial v0.1
 
 git commit -m $msg
 
-# 4. Configura remote e push
+# 4. Configura remote (sem 'Stop' aqui pra nao tropecar no stderr do get-url)
 $remote = "https://github.com/dhsig86/OTTO-AERODIG.git"
-$existingRemote = git remote get-url origin 2>$null
-if (-not $existingRemote) {
+$prevAction = $ErrorActionPreference
+$ErrorActionPreference = 'Continue'
+$existingRemote = (git remote get-url origin 2>&1) | Out-String
+$ErrorActionPreference = $prevAction
+if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($existingRemote) -or $existingRemote -match 'No such remote') {
     git remote add origin $remote
+    Write-Host "Remote 'origin' adicionado: $remote" -ForegroundColor Green
+} else {
+    Write-Host "Remote 'origin' ja existe: $($existingRemote.Trim())" -ForegroundColor Yellow
 }
 
 Write-Host ""
