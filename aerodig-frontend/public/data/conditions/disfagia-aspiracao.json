@@ -1,0 +1,50 @@
+{
+  "id": "disfagia-aspiracao",
+  "slug": "disfagia-aspiracao",
+  "title_pt": "Disfagia e aspiração pediátrica",
+  "title_en": "Pediatric dysphagia and aspiration",
+  "audience": "pediatric",
+  "domain": "swallowing",
+  "age_range": ["neonate", "infant", "toddler", "school", "adolescent"],
+  "summary": "Sinal-sintoma transversal do campo aerodigestivo. FEES e VFSS são considerados elementos centrais do programa, não acessórios. PEDI-EAT-10 é rastreio pediátrico útil; FOIS infantil/pediátrico está consolidado para nível funcional de alimentação oral.",
+  "confidence": "high",
+  "confidence_rationale": "Consenso aerodigestivo internacional e diretrizes de fonoaudiologia consolidam FEES/VFSS como exames centrais.",
+  "classifications": [
+    {
+      "name": "PEDI-EAT-10 (rastreio)",
+      "author_year": "Serel-Arslan, 2018",
+      "description": "10 itens; pontos de corte sugerem sintomatologia significativa.",
+      "pediatric_validated": true
+    }
+  ],
+  "red_flags": [
+    "Pneumonia de repetição",
+    "Perda ponderal ou falha em ganhar peso",
+    "Tosse persistente durante alimentação",
+    "Voz molhada após deglutição"
+  ],
+  "key_exams": [
+    "FEES (videoendoscopia da deglutição)",
+    "VFSS (videofluoroscopia da deglutição)",
+    "Avaliação fonoaudiológica clínica estruturada",
+    "Investigação de fenda laríngea quando aspiração silenciosa"
+  ],
+  "common_pitfalls": [
+    "Tratar disfagia sem investigar fenda laríngea",
+    "Importar instrumentos adultos (DOSS) sem aviso de limitação pediátrica",
+    "Não considerar EoE em criança com impactação alimentar"
+  ],
+  "associated_pathways": ["aspiracao-cronica"],
+  "associated_procedures": [],
+  "associated_instruments": ["pedi-eat-10", "fois-pediatrico", "fees-pediatrico"],
+  "epidemiology_global": "Prevalência variável conforme população (NICU graduates: até 50%; saudáveis: <1%).",
+  "epidemiology_brazil": "Sem dados populacionais; séries em centros terciários.",
+  "sources": [
+    {
+      "title": "Pediatric Eating Assessment Tool (PEDI-EAT-10)",
+      "authors": "Serel-Arslan S, Demir N, Karaduman AA",
+      "year": 2018,
+      "source_type": "primary"
+    }
+  ]
+}

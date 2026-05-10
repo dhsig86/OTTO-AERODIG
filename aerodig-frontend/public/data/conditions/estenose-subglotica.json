@@ -1,0 +1,63 @@
+{
+  "id": "estenose-subglotica",
+  "slug": "estenose-subglotica",
+  "title_pt": "Estenose subglótica e laringotraqueal",
+  "title_en": "Subglottic and laryngotracheal stenosis",
+  "audience": "pediatric",
+  "domain": "larynx",
+  "age_range": ["neonate", "infant", "toddler", "school", "adolescent"],
+  "summary": "Estreitamento congênito ou adquirido da subglote/laringotraqueia. Causa principal: lesão pós-intubação. Myer-Cotton gradua subglote isoladamente; ELS apoia padronização de extensão laringotraqueal.",
+  "confidence": "high",
+  "confidence_rationale": "Myer-Cotton e ELS são referência consolidada; PCTR e LTR são padrão cirúrgico.",
+  "classifications": [
+    {
+      "name": "Myer-Cotton",
+      "author_year": "Myer, O'Connor, Cotton, 1994",
+      "description": "Grau I: <50% obstrução; Grau II: 51-70%; Grau III: 71-99%; Grau IV: sem lúmen detectável.",
+      "pediatric_validated": true
+    },
+    {
+      "name": "ELS (European Laryngological Society)",
+      "author_year": "Monnier et al., 2015",
+      "description": "Padronização para estenose laringotraqueal (extensão, sítio, etiologia, comorbidades).",
+      "pediatric_validated": true
+    }
+  ],
+  "red_flags": [
+    "Estridor bifásico em paciente com história de intubação",
+    "Falha de extubação repetida",
+    "Estridor com piora rápida em quadro infeccioso (estenose limita reserva)"
+  ],
+  "key_exams": [
+    "Microlaringoscopia + broncoscopia (padrão diagnóstico)",
+    "Avaliação de extensão proximal-distal e mobilidade de pregas vocais",
+    "TC para casos extensos (planejamento cirúrgico)",
+    "Avaliação de DRGE e EoE concomitantes"
+  ],
+  "common_pitfalls": [
+    "Tratar como crupe recorrente sem investigar via aérea",
+    "Endoscopia ambulatorial sem capacidade de manobra cirúrgica",
+    "Não documentar grau, extensão e estado de traqueostomia"
+  ],
+  "associated_pathways": ["falha-extubacao", "estridor-no-lactente"],
+  "associated_procedures": ["ltr-laringotracheal-reconstruction", "pctr-cricotracheal-resection", "dilatacao-endoscopica"],
+  "associated_instruments": ["myer-cotton", "cali"],
+  "epidemiology_global": "Incidência relacionada a UTI neonatal/pediátrica e duração de intubação. Maior causa de traqueostomia adquirida em crianças.",
+  "epidemiology_brazil": "Schweiger et al. (HCPA) descreveram fatores de risco e desfechos em coorte brasileira; carência de dados populacionais.",
+  "sources": [
+    {
+      "title": "Proposed grading system for subglottic stenosis",
+      "authors": "Myer CM, O'Connor DM, Cotton RT",
+      "journal": "Ann Otol Rhinol Laryngol",
+      "year": 1994,
+      "source_type": "primary"
+    },
+    {
+      "title": "Proposal of a new classification for optimising outcome assessment of paediatric laryngotracheal stenoses",
+      "authors": "Monnier P, et al.",
+      "journal": "Eur Arch Otorhinolaryngol",
+      "year": 2015,
+      "source_type": "consensus"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "fenda-laringea",
+  "slug": "fenda-laringea",
+  "title_pt": "Fenda laríngea",
+  "title_en": "Laryngeal cleft",
+  "audience": "pediatric",
+  "domain": "larynx",
+  "age_range": ["neonate", "infant", "toddler"],
+  "summary": "Comunicação anormal entre laringe/traqueia e esôfago. Causa importante de aspiração silenciosa, tosse com alimentação e pneumonias de repetição. O sistema Benjamin-Inglis (Tipos I a IV) por profundidade da fenda é a referência prática.",
+  "confidence": "high",
+  "confidence_rationale": "Classificação Benjamin-Inglis universalmente referenciada; correlação clara entre tipo e estratégia cirúrgica.",
+  "classifications": [
+    {
+      "name": "Benjamin-Inglis",
+      "author_year": "Benjamin & Inglis, 1989",
+      "description": "Tipo I: supraglótica; Tipo II: cricoide parcial; Tipo III: cricoide total ± traqueia cervical; Tipo IV: estende-se ao tórax.",
+      "pediatric_validated": true
+    }
+  ],
+  "red_flags": [
+    "Aspiração com alimentação líquida persistente após 6 meses",
+    "Pneumonia de repetição em criança sem outra causa óbvia",
+    "Tosse e cianose imediatas ao primeiro gole"
+  ],
+  "key_exams": [
+    "Microlaringoscopia + palpação da comissura interaritenoide (padrão-ouro)",
+    "FEES e VFSS para avaliar aspiração funcional",
+    "Broncoscopia rígida para tipos profundos",
+    "TC de tórax para extensão (tipos III/IV)"
+  ],
+  "common_pitfalls": [
+    "Diagnóstico tardio por endoscopia sem palpação direta",
+    "Confundir aspiração funcional com fenda anatômica e vice-versa",
+    "Subestimar tipos I que respondem a injeção de bulking"
+  ],
+  "associated_pathways": ["aspiracao-cronica"],
+  "associated_procedures": ["correcao-fenda-laringea-endoscopica"],
+  "associated_instruments": ["pedi-eat-10", "fees-pediatrico"],
+  "epidemiology_global": "Rara, ~0.1% dos quadros aerodigestivos pediátricos referenciados. Frequentemente subdiagnosticada.",
+  "epidemiology_brazil": "Sem dados populacionais. Casos individuais publicados em centros terciários.",
+  "sources": [
+    {
+      "title": "Minor laryngeal cleft (type I)",
+      "authors": "Benjamin B, Inglis A",
+      "journal": "Ann Otol Rhinol Laryngol",
+      "year": 1989,
+      "source_type": "primary"
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import {
   Calendar,
   Calculator,
 } from 'lucide-react';
+import { isStaticMode } from '../services/api';
 
 const TILES = [
   { to: '/atlas', label: 'Atlas de condições', desc: 'Verbetes curados com classificações, red flags e exames-chave.', icon: BookOpen, color: 'text-otto-dark' },
@@ -27,7 +28,17 @@ export function HomePage() {
   return (
     <div>
       <header className="mb-8">
-        <p className="text-xs uppercase tracking-wide text-otto-muted mb-1">OTTO Ecosystem</p>
+        <div className="flex items-center justify-between gap-3 mb-1">
+          <p className="text-xs uppercase tracking-wide text-otto-muted">OTTO Ecosystem</p>
+          {isStaticMode && (
+            <span
+              className="pill bg-aerodig-news/15 text-amber-700"
+              title="Frontend rodando com seeds estáticos. Backend FastAPI ainda não está conectado."
+            >
+              modo preview · v0.1
+            </span>
+          )}
+        </div>
         <h1 className="text-3xl md:text-4xl font-bold text-otto-dark mb-3">
           Aerodigestive Hub
         </h1>

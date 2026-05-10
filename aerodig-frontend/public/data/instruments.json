@@ -1,0 +1,226 @@
+[
+  {
+    "id": "myer-cotton",
+    "slug": "myer-cotton",
+    "title_pt": "Classificação de Myer-Cotton (estenose subglótica)",
+    "title_en": "Myer-Cotton Grading System",
+    "audience": "pediatric",
+    "instrument_type": "endoscopic",
+    "domain": "airway",
+    "items_count": 4,
+    "interpretation": "Grau I: <50%; Grau II: 51-70%; Grau III: 71-99%; Grau IV: sem lúmen detectável.",
+    "pediatric_validated": true,
+    "ptbr_validated": true,
+    "digital_calculator_available": true,
+    "confidence": "high",
+    "confidence_rationale": "Padrão histórico universalmente referenciado.",
+    "sources": [
+      {"title": "Proposed grading system for subglottic stenosis", "authors": "Myer CM, O'Connor DM, Cotton RT", "year": 1994, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "benjamin-inglis",
+    "slug": "benjamin-inglis",
+    "title_pt": "Classificação de Benjamin-Inglis (fenda laríngea)",
+    "title_en": "Benjamin-Inglis Classification",
+    "audience": "pediatric",
+    "instrument_type": "endoscopic",
+    "domain": "airway",
+    "items_count": 4,
+    "interpretation": "Tipo I: supraglótica; Tipo II: cricoide parcial; Tipo III: cricoide total ± traqueia cervical; Tipo IV: estende-se ao tórax.",
+    "pediatric_validated": true,
+    "ptbr_validated": true,
+    "digital_calculator_available": false,
+    "confidence": "high",
+    "confidence_rationale": "Sistema de referência prática para fenda laríngea.",
+    "sources": [
+      {"title": "Minor laryngeal cleft (type I)", "authors": "Benjamin B, Inglis A", "year": 1989, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "cali",
+    "slug": "cali",
+    "title_pt": "CALI (Classification of Acute Laryngeal Injury)",
+    "title_en": "CALI",
+    "audience": "pediatric",
+    "instrument_type": "endoscopic",
+    "domain": "airway",
+    "interpretation": "Estratifica achados de mucosa/edema/ulceração no momento da extubação para predizer estenose.",
+    "pediatric_validated": true,
+    "ptbr_validated": true,
+    "digital_calculator_available": false,
+    "confidence": "high",
+    "confidence_rationale": "Validado em coorte HCPA/UFRGS e citado internacionalmente.",
+    "sources": [
+      {"title": "Acute laryngeal injuries after endotracheal intubation in children", "authors": "Schweiger C, et al.", "year": 2017, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "pedi-eat-10",
+    "slug": "pedi-eat-10",
+    "title_pt": "PEDI-EAT-10 (Pediatric Eating Assessment Tool)",
+    "title_en": "PEDI-EAT-10",
+    "audience": "pediatric",
+    "instrument_type": "screening",
+    "domain": "swallowing",
+    "items_count": 10,
+    "interpretation": "Pontuação >3 sugere sintomatologia significativa de disfagia em crianças.",
+    "pediatric_validated": true,
+    "ptbr_validated": true,
+    "digital_calculator_available": true,
+    "confidence": "high",
+    "confidence_rationale": "Validado em múltiplos idiomas; tradução PT-BR disponível.",
+    "sources": [
+      {"title": "Pediatric Eating Assessment Tool", "authors": "Serel-Arslan S, Demir N, Karaduman AA", "year": 2018, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "fois-pediatrico",
+    "slug": "fois-pediatrico",
+    "title_pt": "FOIS pediátrica (Functional Oral Intake Scale)",
+    "title_en": "Pediatric FOIS",
+    "audience": "pediatric",
+    "instrument_type": "outcome",
+    "domain": "swallowing",
+    "items_count": 7,
+    "interpretation": "Nível 1 (sem ingestão oral) a 7 (ingestão oral total sem restrição).",
+    "pediatric_validated": true,
+    "ptbr_validated": true,
+    "digital_calculator_available": true,
+    "confidence": "high",
+    "confidence_rationale": "Adaptação pediátrica difundida em fonoaudiologia clínica.",
+    "sources": [
+      {"title": "Functional Oral Intake Scale", "authors": "Crary MA, Mann GD, Groher ME", "year": 2005, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "fees-pediatrico",
+    "slug": "fees-pediatrico",
+    "title_pt": "FEES pediátrica",
+    "title_en": "Pediatric FEES",
+    "audience": "pediatric",
+    "instrument_type": "endoscopic",
+    "domain": "swallowing",
+    "interpretation": "Avaliação endoscópica funcional da deglutição. Padroniza penetração/aspiração e resposta sensitiva supraglótica.",
+    "pediatric_validated": true,
+    "ptbr_validated": true,
+    "digital_calculator_available": false,
+    "confidence": "high",
+    "confidence_rationale": "Componente central de programas aerodigestivos segundo consenso internacional.",
+    "sources": [
+      {"title": "Aerodigestive program structure and function consensus", "year": 2018, "source_type": "consensus"}
+    ]
+  },
+  {
+    "id": "psq-srbd",
+    "slug": "psq-srbd",
+    "title_pt": "PSQ-SRBD (Pediatric Sleep Questionnaire — Sleep Related Breathing Disorder)",
+    "title_en": "PSQ-SRBD",
+    "audience": "pediatric",
+    "instrument_type": "screening",
+    "domain": "sleep",
+    "items_count": 22,
+    "interpretation": "Escore >0.33 sugere alto risco de SAOS pediátrica (rastreio).",
+    "pediatric_validated": true,
+    "ptbr_validated": true,
+    "digital_calculator_available": true,
+    "confidence": "high",
+    "confidence_rationale": "Validado em PT-BR (Brasil); melhor desempenho que OSA-18 como rastreio.",
+    "sources": [
+      {"title": "Validation of the Brazilian Portuguese version of the Pediatric Sleep Questionnaire", "year": 2014, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "osa-18",
+    "slug": "osa-18",
+    "title_pt": "OSA-18 (qualidade de vida em SAOS pediátrica)",
+    "title_en": "OSA-18",
+    "audience": "pediatric",
+    "instrument_type": "outcome",
+    "domain": "sleep",
+    "items_count": 18,
+    "interpretation": "Mede impacto de QoL; não é instrumento diagnóstico de SAOS.",
+    "pediatric_validated": true,
+    "ptbr_validated": true,
+    "digital_calculator_available": true,
+    "confidence": "moderate",
+    "confidence_rationale": "Boa validade para QoL; performance limitada como rastreio diagnóstico de SAOS.",
+    "sources": [
+      {"title": "Quality of life for children with obstructive sleep apnea", "authors": "Franco RA, et al.", "year": 2000, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "erefs",
+    "slug": "erefs",
+    "title_pt": "EREFS (EoE Endoscopic Reference Score)",
+    "title_en": "EREFS",
+    "audience": "both",
+    "instrument_type": "endoscopic",
+    "domain": "EoE",
+    "items_count": 5,
+    "interpretation": "Edema, anéis, exsudato, sulcos, estenose. Combinados em score endoscópico de EoE.",
+    "pediatric_validated": true,
+    "ptbr_validated": false,
+    "digital_calculator_available": true,
+    "confidence": "high",
+    "confidence_rationale": "Padrão endoscópico atual da EoE em adultos e crianças.",
+    "sources": [
+      {"title": "Endoscopic assessment of the oesophageal features of eosinophilic oesophagitis", "authors": "Hirano I, et al.", "year": 2013, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "i-gerq-r",
+    "slug": "i-gerq-r",
+    "title_pt": "I-GERQ-R (Infant Gastroesophageal Reflux Questionnaire — Revised)",
+    "title_en": "I-GERQ-R",
+    "audience": "pediatric",
+    "instrument_type": "screening",
+    "domain": "reflux",
+    "items_count": 12,
+    "interpretation": "Rastreio de DRGE em lactentes; melhor adequação pediátrica que GERD-HRQL.",
+    "pediatric_validated": true,
+    "ptbr_validated": false,
+    "digital_calculator_available": true,
+    "confidence": "high",
+    "confidence_rationale": "Recomendado em diretrizes pediátricas de DRGE.",
+    "sources": [
+      {"title": "Validation of the I-GERQ-R", "authors": "Kleinman L, et al.", "year": 2006, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "derkay",
+    "slug": "derkay",
+    "title_pt": "Derkay Staging Score (RRP)",
+    "title_en": "Derkay Staging Score",
+    "audience": "both",
+    "instrument_type": "endoscopic",
+    "domain": "airway",
+    "interpretation": "Pontuação de extensão da papilomatose respiratória recorrente em vias aéreas.",
+    "pediatric_validated": true,
+    "ptbr_validated": false,
+    "digital_calculator_available": true,
+    "confidence": "high",
+    "confidence_rationale": "Padrão internacional para acompanhamento de RRP.",
+    "sources": [
+      {"title": "Recurrent respiratory papillomatosis: a longitudinal study", "authors": "Derkay CS, et al.", "year": 1998, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "i-see",
+    "slug": "i-see",
+    "title_pt": "I-SEE (Index of Severity for Eosinophilic Esophagitis)",
+    "title_en": "I-SEE",
+    "audience": "both",
+    "instrument_type": "histologic",
+    "domain": "EoE",
+    "interpretation": "Sistema integrado para gravidade e remissão de EoE.",
+    "pediatric_validated": true,
+    "ptbr_validated": false,
+    "digital_calculator_available": false,
+    "confidence": "moderate",
+    "confidence_rationale": "Adoção em ascensão; complementar ao EREFS e contagem de eosinófilos.",
+    "sources": [
+      {"title": "I-SEE consensus", "authors": "Collins MH, et al.", "year": 2022, "source_type": "consensus"}
+    ]
+  }
+]

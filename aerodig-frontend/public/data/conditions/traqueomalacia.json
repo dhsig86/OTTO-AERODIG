@@ -1,0 +1,50 @@
+{
+  "id": "traqueomalacia",
+  "slug": "traqueomalacia",
+  "title_pt": "Traqueomalácia e broncomalácia",
+  "title_en": "Tracheomalacia and bronchomalacia",
+  "audience": "pediatric",
+  "domain": "trachea",
+  "age_range": ["neonate", "infant", "toddler", "school"],
+  "summary": "Colapso dinâmico de via aérea central. Pode ser primária, secundária (compressão vascular, EA/FTE), localizada ou difusa. Aortopexia é a cirurgia mais usada; séries recentes mostram papel crescente de tracheopexy e abordagens combinadas. Revisão recente: melhora respiratória em ~80% após cirurgia em malácia grave.",
+  "confidence": "high",
+  "confidence_rationale": "Convergência entre revisões e séries recentes sobre indicação cirúrgica e desfechos.",
+  "classifications": [
+    {
+      "name": "Localização (anatômica)",
+      "author_year": "Consenso operacional",
+      "description": "Cervical / torácica / carenal / brônquica; difusa vs. focal.",
+      "pediatric_validated": true
+    }
+  ],
+  "red_flags": [
+    "Tosse em barking severa com dispneia",
+    "BRUE (eventos breves de aparente sufocamento)",
+    "Falha em ganho ponderal por exaustão respiratória",
+    "Pneumonia de repetição com mesma topografia"
+  ],
+  "key_exams": [
+    "Broncoscopia dinâmica em ventilação espontânea (padrão-ouro)",
+    "TC dinâmica (inspiração/expiração) para extensão",
+    "Avaliação cardíaca para compressão vascular associada"
+  ],
+  "common_pitfalls": [
+    "Broncoscopia sob relaxante muscular (subestima colapso)",
+    "Atribuir sintomas só a refluxo sem avaliação dinâmica",
+    "Não rastrear sling de artéria pulmonar / ducto arterioso compressivo"
+  ],
+  "associated_pathways": ["aspiracao-cronica"],
+  "associated_procedures": ["aortopexia", "tracheopexy-posterior"],
+  "associated_instruments": [],
+  "epidemiology_global": "Prevalência precisa desconhecida; alta em prematuros e em pacientes com EA/FTE.",
+  "epidemiology_brazil": "Sem censo nacional.",
+  "sources": [
+    {
+      "title": "Outcomes of surgical treatment for severe tracheomalacia",
+      "authors": "Multiple",
+      "journal": "Pediatric Pulmonology",
+      "year": 2024,
+      "source_type": "review"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "aerodigestive-program",
+    "term": "(aerodigestive[tiab] OR \"aerodigestive program\"[tiab] OR \"aerodigestive team\"[tiab]) AND (pediatric OR child*)",
+    "max_results": 30,
+    "domain_tags": ["program"]
+  },
+  {
+    "name": "pediatric-airway-stenosis",
+    "term": "(\"laryngotracheal stenosis\"[tiab] OR \"subglottic stenosis\"[tiab]) AND (pediatric OR child* OR infant*)",
+    "max_results": 30,
+    "domain_tags": ["airway", "stenosis"]
+  },
+  {
+    "name": "tracheomalacia-pediatric",
+    "term": "(tracheomalacia[tiab] OR bronchomalacia[tiab]) AND (pediatric OR child*)",
+    "max_results": 25,
+    "domain_tags": ["airway", "tracheomalacia"]
+  },
+  {
+    "name": "laryngomalacia",
+    "term": "laryngomalacia[tiab] AND (pediatric OR child* OR infant*)",
+    "max_results": 25,
+    "domain_tags": ["airway", "laryngomalacia"]
+  },
+  {
+    "name": "tracheoesophageal-fistula",
+    "term": "(\"tracheoesophageal fistula\"[tiab] OR \"esophageal atresia\"[tiab]) AND (pediatric OR child* OR neonat*)",
+    "max_results": 25,
+    "domain_tags": ["esophagus", "EA-TEF"]
+  },
+  {
+    "name": "eoe-pediatric",
+    "term": "(\"eosinophilic esophagitis\"[tiab]) AND (pediatric OR child*)",
+    "max_results": 25,
+    "domain_tags": ["esophagus", "EoE"]
+  },
+  {
+    "name": "swallowing-pediatric",
+    "term": "(FEES OR videofluoroscopy OR dysphagia[tiab]) AND (pediatric OR child*)",
+    "max_results": 25,
+    "domain_tags": ["swallowing"]
+  },
+  {
+    "name": "post-intubation-injury",
+    "term": "(\"post-intubation\"[tiab] OR \"acute laryngeal injury\"[tiab] OR CALI[tiab]) AND (pediatric OR child*)",
+    "max_results": 20,
+    "domain_tags": ["airway", "intubation"]
+  },
+  {
+    "name": "ai-pediatric-airway",
+    "term": "(\"artificial intelligence\"[tiab] OR \"machine learning\"[tiab] OR \"deep learning\"[tiab]) AND (\"pediatric airway\"[tiab] OR laryngoscopy[tiab])",
+    "max_results": 20,
+    "domain_tags": ["ai", "frontier"]
+  }
+]
