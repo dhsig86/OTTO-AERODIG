@@ -1,0 +1,151 @@
+[
+  {
+    "id": "unicamp",
+    "slug": "unicamp",
+    "title_pt": "UNICAMP — Programa Aerodigestivo (Campinas)",
+    "title_en": "UNICAMP Aerodigestive Program (Campinas, Brazil)",
+    "audience": "pediatric",
+    "node_type": "center",
+    "country": "Brasil",
+    "city": "Campinas, SP",
+    "institution": "Universidade Estadual de Campinas",
+    "specialist_name": "Rebecca Maunsell",
+    "focus_areas": [
+      "Via aérea pediátrica",
+      "Airway team",
+      "Seguimento de traqueostomia",
+      "Programa aerodigestivo inicial"
+    ],
+    "public_url": "https://www.unicamp.br/",
+    "confidence": "high",
+    "confidence_rationale": "Publicações brasileiras alinhadas + airway team estruturado.",
+    "sources": [
+      {"title": "Outcomes after airway team implementation in Brazil", "year": 2023, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "hcpa-ufrgs",
+    "slug": "hcpa-ufrgs",
+    "title_pt": "HCPA-UFRGS — Grupo de Via Aérea Pediátrica (Porto Alegre)",
+    "title_en": "HCPA-UFRGS Pediatric Airway Group (Porto Alegre, Brazil)",
+    "audience": "pediatric",
+    "node_type": "center",
+    "country": "Brasil",
+    "city": "Porto Alegre, RS",
+    "institution": "Hospital de Clínicas de Porto Alegre / UFRGS",
+    "specialist_name": "Claudia Schweiger",
+    "focus_areas": [
+      "Lesão pós-intubação",
+      "Estenose subglótica",
+      "CALI",
+      "Endoscopia pediátrica"
+    ],
+    "public_url": "https://www.hcpa.edu.br/",
+    "confidence": "high",
+    "confidence_rationale": "Produção sólida em lesão de via aérea pós-intubação + simpósio internacional.",
+    "sources": [
+      {"title": "Acute laryngeal injuries in children", "authors": "Schweiger C, et al.", "year": 2017, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "fiocruz-iff",
+    "slug": "fiocruz-iff",
+    "title_pt": "Fiocruz / IFF — Endoscopia Respiratória Pediátrica (Rio de Janeiro)",
+    "title_en": "Fiocruz / IFF Pediatric Respiratory Endoscopy (Rio de Janeiro, Brazil)",
+    "audience": "pediatric",
+    "node_type": "center",
+    "country": "Brasil",
+    "city": "Rio de Janeiro, RJ",
+    "institution": "Fiocruz / Instituto Fernandes Figueira",
+    "specialist_name": "Paulo Pires de Mello",
+    "focus_areas": [
+      "Endoscopia respiratória pediátrica",
+      "Capacitação e formação"
+    ],
+    "public_url": "https://www.iff.fiocruz.br/",
+    "confidence": "moderate",
+    "confidence_rationale": "Atuação pública visível; literatura indexada menos densa que UNICAMP/HCPA.",
+    "sources": []
+  },
+  {
+    "id": "aeroped",
+    "slug": "aeroped",
+    "title_pt": "Aeroped (Niterói/RJ)",
+    "title_en": "Aeroped (Niteroi, RJ, Brazil)",
+    "audience": "pediatric",
+    "node_type": "center",
+    "country": "Brasil",
+    "city": "Niterói, RJ",
+    "institution": "Aeroped",
+    "specialist_name": "Paulo Pires de Mello",
+    "focus_areas": [
+      "Via aérea pediátrica",
+      "Endoscopia"
+    ],
+    "confidence": "moderate",
+    "confidence_rationale": "Referência regional brasileira em endoscopia pediátrica.",
+    "sources": []
+  },
+  {
+    "id": "ufrj-hucff",
+    "slug": "ufrj-hucff",
+    "title_pt": "UFRJ-HUCFF (Rio de Janeiro)",
+    "title_en": "UFRJ-HUCFF (Rio de Janeiro, Brazil)",
+    "audience": "both",
+    "node_type": "center",
+    "country": "Brasil",
+    "city": "Rio de Janeiro, RJ",
+    "institution": "Universidade Federal do Rio de Janeiro / Hospital Clementino Fraga Filho",
+    "specialist_name": "Luzia Abrão El Hadj",
+    "focus_areas": [
+      "Otorrinolaringologia hospitalar",
+      "Avaliação fonoaudiológica"
+    ],
+    "public_url": "https://www.hucff.ufrj.br/",
+    "confidence": "moderate",
+    "confidence_rationale": "Vínculo institucional identificável; literatura aerodigestiva específica menos densa.",
+    "sources": []
+  },
+  {
+    "id": "cincinnati-children",
+    "slug": "cincinnati-children",
+    "title_pt": "Cincinnati Children's — Aerodigestive and Sleep Center",
+    "title_en": "Cincinnati Children's Aerodigestive Center",
+    "audience": "pediatric",
+    "node_type": "center",
+    "country": "EUA",
+    "city": "Cincinnati, OH",
+    "institution": "Cincinnati Children's Hospital Medical Center",
+    "specialist_name": "Michael J. Rutter",
+    "focus_areas": [
+      "Reconstrução de via aérea complexa",
+      "Programa aerodigestivo histórico",
+      "Educação e formação internacional"
+    ],
+    "public_url": "https://www.cincinnatichildrens.org/",
+    "confidence": "high",
+    "confidence_rationale": "Centro pioneiro do campo (1999); referência mundial.",
+    "sources": []
+  },
+  {
+    "id": "chuv-lausanne",
+    "slug": "chuv-lausanne",
+    "title_pt": "CHUV — Airway Unit (Lausanne, Suíça)",
+    "title_en": "CHUV Airway Unit (Lausanne, Switzerland)",
+    "audience": "pediatric",
+    "node_type": "center",
+    "country": "Suíça",
+    "city": "Lausanne",
+    "institution": "Centre Hospitalier Universitaire Vaudois",
+    "specialist_name": "Philippe Monnier (legado) / equipe atual",
+    "focus_areas": [
+      "Reconstrução de via aérea (PCTR/LTR)",
+      "Curso de via aérea Lausanne",
+      "Pesquisa clínica em estenose"
+    ],
+    "public_url": "https://www.chuv.ch/",
+    "confidence": "high",
+    "confidence_rationale": "Tradição reconstrutiva com altas taxas de decanulação publicadas.",
+    "sources": []
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "aerodigestive-society-2026",
+    "slug": "aerodigestive-society-2026",
+    "title_pt": "Aerodigestive Society Annual Meeting 2026",
+    "title_en": "Aerodigestive Society Annual Meeting 2026",
+    "audience": "both",
+    "event_type": "congress",
+    "organizer": "Aerodigestive Society",
+    "location": "Toronto, Canada",
+    "starts_on": "2026-09-17",
+    "ends_on": "2026-09-19",
+    "url": "https://www.aerodigestive.org/",
+    "target_audience": ["ent", "speech", "ped_pulm", "ped_gi", "anesthesia"],
+    "registration_open": true,
+    "notes_ptbr": "Encontro de referência da sociedade internacional. Foco em malácia, fala, aerodigestive clinics, pacientes sindrômicos.",
+    "confidence": "moderate",
+    "confidence_rationale": "Datas específicas devem ser confirmadas no site oficial.",
+    "sources": [
+      {"title": "Aerodigestive Society", "url": "https://www.aerodigestive.org/", "source_type": "institutional"}
+    ]
+  },
+  {
+    "id": "aao-hns-2026",
+    "slug": "aao-hns-2026",
+    "title_pt": "AAO-HNS Annual Meeting & OTO Experience 2026",
+    "title_en": "AAO-HNS Annual Meeting 2026",
+    "audience": "both",
+    "event_type": "congress",
+    "organizer": "American Academy of Otolaryngology – Head and Neck Surgery",
+    "location": "Boston, MA",
+    "starts_on": "2026-09-26",
+    "ends_on": "2026-09-30",
+    "url": "https://www.entnet.org/event/2026-aao-hns-annual-meeting/",
+    "target_audience": ["ent"],
+    "registration_open": true,
+    "confidence": "moderate",
+    "confidence_rationale": "Datas devem ser conferidas.",
+    "sources": [
+      {"title": "AAO-HNS events", "url": "https://www.entnet.org/", "source_type": "institutional"}
+    ]
+  },
+  {
+    "id": "aborl-ccf-2026",
+    "slug": "aborl-ccf-2026",
+    "title_pt": "Congresso Brasileiro de Otorrinolaringologia 2026",
+    "title_en": "Brazilian Society of ENT Congress 2026",
+    "audience": "both",
+    "event_type": "congress",
+    "organizer": "ABORL-CCF",
+    "location": "São Paulo, SP",
+    "starts_on": "2026-11-04",
+    "ends_on": "2026-11-07",
+    "url": "https://www.aborlccf.org.br/",
+    "target_audience": ["ent"],
+    "registration_open": true,
+    "notes_ptbr": "Maior evento brasileiro de ORL. Em 2026 deve incluir trilha de via aérea pediátrica.",
+    "confidence": "moderate",
+    "confidence_rationale": "Local e datas devem ser confirmados.",
+    "sources": [
+      {"title": "ABORL-CCF", "url": "https://www.aborlccf.org.br/", "source_type": "institutional"}
+    ]
+  },
+  {
+    "id": "hcpa-simposio-2026",
+    "slug": "hcpa-simposio-2026",
+    "title_pt": "Simpósio Internacional de Via Aérea Pediátrica HCPA 2026",
+    "title_en": "HCPA International Symposium on Pediatric Airway 2026",
+    "audience": "pediatric",
+    "event_type": "symposium",
+    "organizer": "HCPA / UFRGS",
+    "location": "Porto Alegre, RS",
+    "starts_on": "2026-08-21",
+    "ends_on": "2026-08-22",
+    "url": "https://www.hcpa.edu.br/",
+    "target_audience": ["ent", "ped_pulm", "anesthesia"],
+    "registration_open": false,
+    "notes_ptbr": "Evento brasileiro mais alinhado com tema aerodigestivo. Incluir programação detalhada quando publicada.",
+    "confidence": "low",
+    "confidence_rationale": "Edição 2026 a confirmar; entrada manual provisória.",
+    "sources": []
+  },
+  {
+    "id": "lausanne-airway-course-2026",
+    "slug": "lausanne-airway-course-2026",
+    "title_pt": "Lausanne Pediatric Airway Course 2026",
+    "title_en": "Lausanne Pediatric Airway Course 2026",
+    "audience": "pediatric",
+    "event_type": "course",
+    "organizer": "CHUV / Université de Lausanne",
+    "location": "Lausanne, Suíça",
+    "starts_on": "2026-06-15",
+    "ends_on": "2026-06-17",
+    "url": "https://www.chuv.ch/",
+    "target_audience": ["ent", "anesthesia", "ped_pulm"],
+    "registration_open": true,
+    "notes_ptbr": "Curso clássico da escola de Monnier — datas exatas devem ser conferidas no site institucional.",
+    "confidence": "moderate",
+    "confidence_rationale": "Edições anuais; datas a confirmar.",
+    "sources": []
+  }
+]

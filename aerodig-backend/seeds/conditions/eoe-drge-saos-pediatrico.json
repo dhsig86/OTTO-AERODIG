@@ -1,0 +1,64 @@
+{
+  "id": "eoe-drge-saos-pediatrico",
+  "slug": "eoe-drge-saos-pediatrico",
+  "title_pt": "Esofagite eosinofílica, DRGE e SAOS pediátricos (cluster)",
+  "title_en": "Eosinophilic esophagitis, GERD, and pediatric OSA (cluster)",
+  "audience": "pediatric",
+  "domain": "esophagus",
+  "age_range": ["infant", "toddler", "school", "adolescent"],
+  "summary": "Tripé de comorbidades que atravessa a maioria dos casos aerodigestivos. EoE: diretriz pediátrica 2024; EREFS é escore endoscópico central; sistemas histológicos/I-SEE complementam. DRGE: diretriz NASPGHAN/ESPGHAN é o pivô; I-GERQ-R e PGSQ têm melhor aderência pediátrica que GERD-HRQL (adulto). SAOS: PSQ/SRBD é melhor rastreio pediátrico (validado em PT-BR); OSA-18 mede impacto de QoL, não diagnostica.",
+  "confidence": "high",
+  "confidence_rationale": "Diretrizes pediátricas explícitas para EoE e DRGE; PSQ tem validação em português do Brasil.",
+  "classifications": [
+    {
+      "name": "EREFS (endoscópico EoE)",
+      "author_year": "Hirano et al., 2013",
+      "description": "Edema, anéis, exsudato, sulcos, estenose — combinados em escore.",
+      "pediatric_validated": true
+    },
+    {
+      "name": "I-SEE (histológico EoE)",
+      "author_year": "Collins et al., 2022",
+      "description": "Classificação histológica integrada para gravidade e remissão.",
+      "pediatric_validated": true
+    }
+  ],
+  "red_flags": [
+    "Impactação alimentar no adolescente",
+    "Tosse noturna e crescimento prejudicado",
+    "Roncos com pausas testemunhadas"
+  ],
+  "key_exams": [
+    "Endoscopia digestiva alta com biópsias seriadas (EoE)",
+    "pH-impedanciometria para DRGE refratário",
+    "Polissonografia para SAOS",
+    "PSQ/SRBD como rastreio em consultório"
+  ],
+  "common_pitfalls": [
+    "Importar instrumento adulto (GERD-HRQL) sem ressalva pediátrica",
+    "Diagnosticar SAOS apenas por OSA-18 (mede QoL, não SAOS)",
+    "Não rastrear EoE em criança operada de EA/FTE com disfagia"
+  ],
+  "associated_pathways": ["aspiracao-cronica"],
+  "associated_procedures": [],
+  "associated_instruments": ["erefs", "psq-srbd", "i-gerq-r", "osa-18"],
+  "epidemiology_global": "EoE pediátrica em ascensão. SAOS pediátrica: 1-5% prevalência.",
+  "epidemiology_brazil": "PSQ validado em PT-BR (Brasil) — ferramenta de rastreio acessível em SUS.",
+  "sources": [
+    {
+      "title": "Practical guideline for diagnosis and management of EoE in children",
+      "year": 2024,
+      "source_type": "guideline"
+    },
+    {
+      "title": "NASPGHAN/ESPGHAN clinical practice guideline for pediatric GERD",
+      "year": 2018,
+      "source_type": "guideline"
+    },
+    {
+      "title": "Validation of the Brazilian Portuguese version of the Pediatric Sleep Questionnaire",
+      "year": 2014,
+      "source_type": "primary"
+    }
+  ]
+}

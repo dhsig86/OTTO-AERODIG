@@ -1,0 +1,49 @@
+{
+  "id": "lesao-pos-intubacao",
+  "slug": "lesao-pos-intubacao",
+  "title_pt": "Lesão laringotraqueal pós-intubação",
+  "title_en": "Post-intubation laryngotracheal injury",
+  "audience": "pediatric",
+  "domain": "larynx",
+  "age_range": ["neonate", "infant", "toddler", "school"],
+  "summary": "Lesão aguda da mucosa laríngea/cricoide secundária à intubação. Fator de risco consistente: duração da intubação. CALI mostrou valor para predizer evolução desfavorável em crianças com lesão aguda.",
+  "confidence": "high",
+  "confidence_rationale": "Estudos brasileiros (HCPA) e internacionais convergem em fatores de risco e valor prognóstico do CALI.",
+  "classifications": [
+    {
+      "name": "CALI (Classification of Acute Laryngeal Injury)",
+      "author_year": "Schweiger et al., 2017",
+      "description": "Estratifica achados de mucosa, edema, ulceração e granulação no momento da extubação para predizer evolução para estenose.",
+      "pediatric_validated": true
+    }
+  ],
+  "red_flags": [
+    "Estridor pós-extubação com cianose ou tiragem",
+    "Necessidade de re-intubação em <72h",
+    "Falha de extubação em criança previamente bem"
+  ],
+  "key_exams": [
+    "Endoscopia flexível em <72h após extubação difícil ou prolongada",
+    "Microlaringoscopia se evolução desfavorável",
+    "Documentação fotográfica seriada"
+  ],
+  "common_pitfalls": [
+    "Aguardar evolução clínica antes de endoscopia (perde janela de prevenção)",
+    "Tratar empiricamente como crupe sem visualização",
+    "Não separar lesão aguda (reversível) de estenose estabelecida"
+  ],
+  "associated_pathways": ["falha-extubacao"],
+  "associated_procedures": ["dilatacao-endoscopica", "ltr-laringotracheal-reconstruction"],
+  "associated_instruments": ["cali"],
+  "epidemiology_global": "Lesão aguda detectável em até 50% das intubações >72h em crianças. Progressão a estenose: ~10-15%.",
+  "epidemiology_brazil": "Casuística HCPA/UFRGS estabelece referência nacional.",
+  "sources": [
+    {
+      "title": "Acute laryngeal injuries after endotracheal intubation in children",
+      "authors": "Schweiger C, et al.",
+      "journal": "Int J Pediatr Otorhinolaryngol",
+      "year": 2017,
+      "source_type": "primary"
+    }
+  ]
+}

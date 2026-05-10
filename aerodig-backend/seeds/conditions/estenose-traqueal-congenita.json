@@ -1,0 +1,49 @@
+{
+  "id": "estenose-traqueal-congenita",
+  "slug": "estenose-traqueal-congenita",
+  "title_pt": "Estenose traqueal congênita (anéis cartilaginosos completos)",
+  "title_en": "Congenital tracheal stenosis (complete cartilaginous rings)",
+  "audience": "pediatric",
+  "domain": "trachea",
+  "age_range": ["neonate", "infant", "toddler"],
+  "summary": "Anéis traqueais completos em formato de \"O\" causam estreitamento fixo. Slide tracheoplasty é tratado como padrão-ouro contemporâneo. Forte associação com sling de artéria pulmonar.",
+  "confidence": "high",
+  "confidence_rationale": "Slide tracheoplasty consolidada por séries multicêntricas e meta-análises recentes.",
+  "classifications": [
+    {
+      "name": "Cantrell-Guild (extensão)",
+      "author_year": "Cantrell, 1964",
+      "description": "Generalizada / em funil / segmentar.",
+      "pediatric_validated": true
+    }
+  ],
+  "red_flags": [
+    "Sibilância fixa não responsiva a broncodilatador",
+    "Estridor bifásico em criança com cardiopatia",
+    "Hipoxemia sem causa pulmonar evidente"
+  ],
+  "key_exams": [
+    "Broncoscopia + TC com reconstrução 3D",
+    "Ecocardiograma para sling de artéria pulmonar",
+    "Avaliação cardíaca completa pré-operatória"
+  ],
+  "common_pitfalls": [
+    "Atrasar diagnóstico interpretando como asma de difícil controle",
+    "Tentar dilatação como primeira linha (alto risco)",
+    "Não reconhecer associação com cardiopatia"
+  ],
+  "associated_pathways": [],
+  "associated_procedures": ["slide-tracheoplasty"],
+  "associated_instruments": [],
+  "epidemiology_global": "Rara: estimativa de 1:64.500 nascidos vivos.",
+  "epidemiology_brazil": "Casos esporádicos publicados em centros pediátricos.",
+  "sources": [
+    {
+      "title": "Slide tracheoplasty for long-segment congenital tracheal stenosis",
+      "authors": "Multiple",
+      "journal": "J Thorac Cardiovasc Surg",
+      "year": 2020,
+      "source_type": "review"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "atresia-esofago-fte",
+  "slug": "atresia-esofago-fte",
+  "title_pt": "Atresia de esôfago e fístula traqueoesofágica (EA/TEF)",
+  "title_en": "Esophageal atresia and tracheoesophageal fistula",
+  "audience": "pediatric",
+  "domain": "esophagus",
+  "age_range": ["neonate", "infant", "toddler", "school", "adolescent"],
+  "summary": "Malformação aerodigestiva por excelência: incidência ~1:2.500-4.000 nascidos vivos. Cuidado longitudinal — não termina na neonatologia. Sequelas frequentes: traqueomalácia, estenose anastomótica, DRGE, disfagia, EoE secundária, problemas pulmonares crônicos.",
+  "confidence": "high",
+  "confidence_rationale": "Diretrizes ESPGHAN e séries multicêntricas convergem em manejo e seguimento.",
+  "classifications": [
+    {
+      "name": "Gross (anatômica)",
+      "author_year": "Gross, 1953",
+      "description": "Tipos A-E: A=atresia sem fístula; B=fístula proximal; C=atresia com fístula distal (mais comum); D=fístulas duplas; E=fístula em H sem atresia.",
+      "pediatric_validated": true
+    }
+  ],
+  "red_flags": [
+    "Salivação excessiva no neonato com sonda que não progride",
+    "Episódios de cianose com alimentação",
+    "Pneumonia de repetição em mesma topografia em criança operada"
+  ],
+  "key_exams": [
+    "Esofagograma contrastado",
+    "Broncoscopia para identificar fístula em H ou recorrência",
+    "Endoscopia digestiva alta + biópsias para EoE no seguimento",
+    "pH-impedanciometria",
+    "VFSS/FEES para disfagia"
+  ],
+  "common_pitfalls": [
+    "Encerrar seguimento após cirurgia neonatal",
+    "Não rastrear EoE na disfagia tardia",
+    "Subestimar traqueomalácia residual"
+  ],
+  "associated_pathways": ["aspiracao-cronica"],
+  "associated_procedures": ["dilatacao-endoscopica"],
+  "associated_instruments": ["pedi-eat-10"],
+  "epidemiology_global": "1:2.500 a 1:4.000 nascidos vivos. Maioria sobrevive na era moderna.",
+  "epidemiology_brazil": "Estudo populacional do Estado de São Paulo mostrou tendência crescente de prevalência registrada.",
+  "sources": [
+    {
+      "title": "ESPGHAN/NASPGHAN guidelines for the evaluation and treatment of gastrointestinal and nutritional complications in children with esophageal atresia",
+      "year": 2016,
+      "source_type": "guideline"
+    }
+  ]
+}

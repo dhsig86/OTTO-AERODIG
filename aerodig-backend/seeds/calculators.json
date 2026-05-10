@@ -1,0 +1,171 @@
+[
+  {
+    "id": "tracheostomy-tube-converter",
+    "slug": "tracheostomy-tube-converter",
+    "title_pt": "Conversor de cânulas de traqueostomia",
+    "title_en": "Tracheostomy tube converter",
+    "audience": "both",
+    "domain": "tracheostomy",
+    "summary": "Conversão entre marcas e sistemas de cânulas de traqueostomia: Shiley NEO/PED/adulto, Bivona, Tracoe (Biesalski), Portex, Rüsch e metálicas Jackson. Conversões aproximadas de DI (mm) ↔ DE (mm) ↔ Fr ↔ tamanho metálico.",
+    "confidence": "moderate",
+    "confidence_rationale": "Tabelas de fabricante são públicas; pequenas variações entre lotes/modelos exigem confirmação no rótulo da cânula em uso clínico real.",
+    "inputs": [
+      {
+        "key": "brand",
+        "label": "Marca",
+        "input_type": "select",
+        "options": ["Shiley", "Bivona", "Tracoe (Biesalski)", "Portex", "Rüsch", "Jackson (metálica)"],
+        "notes": "Selecione a marca da cânula atual ou desejada."
+      },
+      {
+        "key": "size",
+        "label": "Tamanho declarado",
+        "input_type": "string",
+        "notes": "Ex: '4.0 PED' (Shiley), '6 mm' (Bivona), '#6' (Jackson)."
+      }
+    ],
+    "outputs": [
+      {"key": "id_mm", "label": "Diâmetro interno (DI)", "unit": "mm"},
+      {"key": "od_mm", "label": "Diâmetro externo (DE)", "unit": "mm"},
+      {"key": "french", "label": "French (Fr)", "unit": "Fr"},
+      {"key": "age_band", "label": "Faixa etária aproximada"},
+      {"key": "equivalents", "label": "Equivalentes em outras marcas"}
+    ],
+    "formula_hint": "French ≈ DE (mm) × 3 (apenas aproximação clínica). Sempre confirmar com rótulo do fabricante.",
+    "reference_table": [
+      {"brand": "Shiley", "size": "2.5 NEO", "id_mm": "2.5", "od_mm": "4.0", "french": "12", "age_band": "Neonato (<3.5kg)"},
+      {"brand": "Shiley", "size": "3.0 NEO", "id_mm": "3.0", "od_mm": "4.5", "french": "13.5", "age_band": "Neonato/lactente"},
+      {"brand": "Shiley", "size": "3.0 PED", "id_mm": "3.0", "od_mm": "4.5", "french": "13.5", "age_band": "Lactente"},
+      {"brand": "Shiley", "size": "3.5 PED", "id_mm": "3.5", "od_mm": "5.2", "french": "16", "age_band": "Lactente"},
+      {"brand": "Shiley", "size": "4.0 PED", "id_mm": "4.0", "od_mm": "5.9", "french": "18", "age_band": "Lactente/toddler"},
+      {"brand": "Shiley", "size": "4.5 PED", "id_mm": "4.5", "od_mm": "6.5", "french": "19.5", "age_band": "Toddler/pré-escolar"},
+      {"brand": "Shiley", "size": "5.0 PED", "id_mm": "5.0", "od_mm": "7.1", "french": "21", "age_band": "Escolar"},
+      {"brand": "Shiley", "size": "5.5 PED", "id_mm": "5.5", "od_mm": "7.7", "french": "23", "age_band": "Escolar/adolescente"},
+      {"brand": "Shiley", "size": "6.0 adulto", "id_mm": "6.0", "od_mm": "8.3", "french": "25", "age_band": "Adolescente/adulto pequeno"},
+      {"brand": "Shiley", "size": "7.0 adulto", "id_mm": "7.0", "od_mm": "9.6", "french": "29", "age_band": "Adulto"},
+      {"brand": "Shiley", "size": "8.0 adulto", "id_mm": "8.0", "od_mm": "10.8", "french": "32", "age_band": "Adulto"},
+      {"brand": "Bivona", "size": "2.5 PED", "id_mm": "2.5", "od_mm": "4.0", "french": "12", "age_band": "Neonato/lactente"},
+      {"brand": "Bivona", "size": "3.0 PED", "id_mm": "3.0", "od_mm": "4.7", "french": "14", "age_band": "Lactente"},
+      {"brand": "Bivona", "size": "4.0 PED", "id_mm": "4.0", "od_mm": "6.0", "french": "18", "age_band": "Toddler"},
+      {"brand": "Bivona", "size": "5.0 PED", "id_mm": "5.0", "od_mm": "7.3", "french": "22", "age_band": "Escolar"},
+      {"brand": "Bivona", "size": "Adult HCT 6", "id_mm": "6.0", "od_mm": "8.7", "french": "26", "age_band": "Adulto"},
+      {"brand": "Bivona", "size": "Adult HCT 8", "id_mm": "8.0", "od_mm": "11.0", "french": "33", "age_band": "Adulto"},
+      {"brand": "Tracoe (Biesalski)", "size": "Mini 3.0", "id_mm": "3.0", "od_mm": "4.5", "french": "13.5", "age_band": "Lactente"},
+      {"brand": "Tracoe (Biesalski)", "size": "Mini 4.0", "id_mm": "4.0", "od_mm": "5.7", "french": "17", "age_band": "Toddler"},
+      {"brand": "Tracoe (Biesalski)", "size": "Twist 7.0", "id_mm": "7.0", "od_mm": "10.0", "french": "30", "age_band": "Adulto"},
+      {"brand": "Tracoe (Biesalski)", "size": "Twist 8.0", "id_mm": "8.0", "od_mm": "11.0", "french": "33", "age_band": "Adulto"},
+      {"brand": "Portex", "size": "6.0", "id_mm": "6.0", "od_mm": "8.2", "french": "25", "age_band": "Adulto pequeno"},
+      {"brand": "Portex", "size": "7.0", "id_mm": "7.0", "od_mm": "9.5", "french": "28.5", "age_band": "Adulto"},
+      {"brand": "Portex", "size": "8.0", "id_mm": "8.0", "od_mm": "10.9", "french": "33", "age_band": "Adulto"},
+      {"brand": "Rüsch", "size": "7.0", "id_mm": "7.0", "od_mm": "9.4", "french": "28", "age_band": "Adulto"},
+      {"brand": "Rüsch", "size": "8.0", "id_mm": "8.0", "od_mm": "10.8", "french": "32", "age_band": "Adulto"},
+      {"brand": "Jackson (metálica)", "size": "#0", "id_mm": "3.5", "od_mm": "5.0", "french": "15", "age_band": "Lactente (sistema antigo)"},
+      {"brand": "Jackson (metálica)", "size": "#1", "id_mm": "4.0", "od_mm": "5.5", "french": "16.5", "age_band": "Lactente/toddler"},
+      {"brand": "Jackson (metálica)", "size": "#2", "id_mm": "4.5", "od_mm": "6.0", "french": "18", "age_band": "Toddler"},
+      {"brand": "Jackson (metálica)", "size": "#3", "id_mm": "5.0", "od_mm": "7.0", "french": "21", "age_band": "Pré-escolar"},
+      {"brand": "Jackson (metálica)", "size": "#4", "id_mm": "5.5", "od_mm": "8.0", "french": "24", "age_band": "Escolar"},
+      {"brand": "Jackson (metálica)", "size": "#5", "id_mm": "6.5", "od_mm": "9.0", "french": "27", "age_band": "Adolescente/adulto pequeno"},
+      {"brand": "Jackson (metálica)", "size": "#6", "id_mm": "7.5", "od_mm": "10.0", "french": "30", "age_band": "Adulto"},
+      {"brand": "Jackson (metálica)", "size": "#7", "id_mm": "8.5", "od_mm": "11.0", "french": "33", "age_band": "Adulto"},
+      {"brand": "Jackson (metálica)", "size": "#8", "id_mm": "9.5", "od_mm": "12.0", "french": "36", "age_band": "Adulto"}
+    ],
+    "notes_ptbr": "Tabela de referência clínica — sempre confirmar com o rótulo do fabricante. Cuffed e fenestradas têm DE diferentes em alguns modelos. Para conversão entre fenestradas/sem cuff, considere também comprimento e curvatura.",
+    "sources": [
+      {
+        "title": "Shiley Tracheostomy Tube Reference Guide",
+        "source_type": "institutional",
+        "url": "https://www.medtronic.com/"
+      },
+      {
+        "title": "Bivona Tracheostomy Tubes — Technical Specifications",
+        "source_type": "institutional",
+        "url": "https://www.smiths-medical.com/"
+      },
+      {
+        "title": "TRACOE catalog (Biesalski)",
+        "source_type": "institutional",
+        "url": "https://www.tracoe.com/"
+      },
+      {
+        "title": "Pediatric Airway Surgery — Philippe Monnier",
+        "source_type": "textbook",
+        "year": 2011,
+        "notes": "Capítulo de traqueostomia pediátrica — referência clássica."
+      }
+    ]
+  },
+  {
+    "id": "myer-cotton-calc",
+    "slug": "myer-cotton-calc",
+    "title_pt": "Calculadora Myer-Cotton (estenose subglótica)",
+    "title_en": "Myer-Cotton Calculator",
+    "audience": "pediatric",
+    "domain": "airway",
+    "summary": "Estima grau de estenose subglótica a partir do diâmetro do tubo endotraqueal que passa sem vazamento, comparado ao esperado para idade.",
+    "confidence": "high",
+    "confidence_rationale": "Sistema referência consagrado por Myer, O'Connor e Cotton (1994).",
+    "inputs": [
+      {"key": "patient_age_band", "label": "Faixa etária", "input_type": "select",
+        "options": ["Neonato", "Lactente (<6m)", "Lactente (6-12m)", "Toddler (1-3a)", "Pré-escolar", "Escolar", "Adolescente"]},
+      {"key": "et_tube_passing", "label": "Maior tubo OT que passa sem vazamento (mm DI)", "input_type": "number", "unit": "mm"}
+    ],
+    "outputs": [
+      {"key": "stenosis_grade", "label": "Grau de estenose (Myer-Cotton)"},
+      {"key": "lumen_reduction_pct", "label": "Redução do lúmen estimada", "unit": "%"}
+    ],
+    "formula_hint": "Reduction% = 1 - (passing_tube / expected_tube)² × 100. Grau I <50%; II 51-70%; III 71-99%; IV sem lúmen detectável.",
+    "reference_table": [
+      {"brand": null, "size": "Neonato (<3.5kg)", "id_mm": "3.0-3.5", "od_mm": null, "french": null, "age_band": "tubo OT esperado"},
+      {"brand": null, "size": "Lactente <1a", "id_mm": "3.5-4.0", "od_mm": null, "french": null, "age_band": "tubo OT esperado"},
+      {"brand": null, "size": "Toddler 1-2a", "id_mm": "4.0-4.5", "od_mm": null, "french": null, "age_band": "tubo OT esperado"},
+      {"brand": null, "size": "Pré-escolar 2-6a", "id_mm": "4.5-5.5", "od_mm": null, "french": null, "age_band": "tubo OT esperado"},
+      {"brand": null, "size": "Escolar 6-12a", "id_mm": "5.5-6.5", "od_mm": null, "french": null, "age_band": "tubo OT esperado"},
+      {"brand": null, "size": "Adolescente >12a", "id_mm": "6.5-7.5", "od_mm": null, "french": null, "age_band": "tubo OT esperado"}
+    ],
+    "sources": [
+      {
+        "title": "Proposed grading system for subglottic stenosis based on endotracheal tube sizes",
+        "authors": "Myer CM, O'Connor DM, Cotton RT",
+        "journal": "Ann Otol Rhinol Laryngol",
+        "year": 1994,
+        "source_type": "primary"
+      }
+    ]
+  },
+  {
+    "id": "pedi-eat-10-calc",
+    "slug": "pedi-eat-10-calc",
+    "title_pt": "PEDI-EAT-10 (calculadora)",
+    "title_en": "PEDI-EAT-10 calculator",
+    "audience": "pediatric",
+    "domain": "swallowing",
+    "summary": "Versão interativa do questionário PEDI-EAT-10 — 10 itens de 0 a 4. Soma >3 sugere sintomatologia significativa.",
+    "confidence": "high",
+    "confidence_rationale": "Validado em múltiplos idiomas; tradução PT-BR disponível.",
+    "inputs": [
+      {"key": "i1", "label": "1 — Engasga durante refeições", "input_type": "number", "unit": "0–4"},
+      {"key": "i2", "label": "2 — Tosse durante ou após alimentação", "input_type": "number", "unit": "0–4"},
+      {"key": "i3", "label": "3 — Voz molhada após deglutir", "input_type": "number", "unit": "0–4"},
+      {"key": "i4", "label": "4 — Demora excessiva nas refeições", "input_type": "number", "unit": "0–4"},
+      {"key": "i5", "label": "5 — Recusa alimentar", "input_type": "number", "unit": "0–4"},
+      {"key": "i6", "label": "6 — Pneumonia recorrente", "input_type": "number", "unit": "0–4"},
+      {"key": "i7", "label": "7 — Perda ou falha de ganho ponderal", "input_type": "number", "unit": "0–4"},
+      {"key": "i8", "label": "8 — Resíduo oral pós-deglutição", "input_type": "number", "unit": "0–4"},
+      {"key": "i9", "label": "9 — Sialorreia importante", "input_type": "number", "unit": "0–4"},
+      {"key": "i10", "label": "10 — Estresse familiar com alimentação", "input_type": "number", "unit": "0–4"}
+    ],
+    "outputs": [
+      {"key": "total", "label": "Pontuação total", "unit": "pontos"},
+      {"key": "interpretation", "label": "Interpretação"}
+    ],
+    "formula_hint": "Soma simples i1..i10. Interpretação: 0–3 normal/limítrofe; >3 sintomatologia significativa.",
+    "sources": [
+      {
+        "title": "Pediatric Eating Assessment Tool (PEDI-EAT-10)",
+        "authors": "Serel-Arslan S, Demir N, Karaduman AA",
+        "year": 2018,
+        "source_type": "primary"
+      }
+    ]
+  }
+]

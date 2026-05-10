@@ -1,0 +1,37 @@
+[
+  {
+    "id": "seed-news-001",
+    "slug": "consenso-aerodigestivo-2018",
+    "title_pt": "Consenso internacional de programas aerodigestivos pediátricos (2018)",
+    "title_en": "Aerodigestive consensus on program structure and function",
+    "audience": "pediatric",
+    "pmid": "29659037",
+    "journal": "Pediatrics",
+    "pub_date": "2018-04-01",
+    "abstract_en": "Consensus statement defining patient population, minimal team composition, and program functions for pediatric aerodigestive programs.",
+    "summary_ptbr": "Define o paciente aerodigestivo, a equipe mínima, FEES/VFSS, coordenação ativa e reunião de caso. Estabelece marco para padronização do campo.",
+    "relevance_score": 0.95,
+    "domain_tags": ["program", "consensus", "pediatric"],
+    "status": "published",
+    "confidence": "high",
+    "confidence_rationale": "Documento de consenso amplamente referenciado no campo.",
+    "sources": []
+  },
+  {
+    "id": "seed-news-002",
+    "slug": "cali-acute-laryngeal-injury",
+    "title_pt": "Lesão laríngea aguda em crianças após intubação (CALI)",
+    "title_en": "Acute laryngeal injuries after endotracheal intubation in children",
+    "audience": "pediatric",
+    "journal": "International Journal of Pediatric Otorhinolaryngology",
+    "pub_date": "2017-06-01",
+    "abstract_en": "Cohort study from HCPA-UFRGS describing acute laryngeal injuries identified at extubation and their predictive value for subsequent stenosis.",
+    "summary_ptbr": "Coorte brasileira valida CALI como classificação prognóstica em crianças extubadas. Suporta endoscopia precoce após extubação difícil.",
+    "relevance_score": 0.9,
+    "domain_tags": ["airway", "intubation", "pediatric"],
+    "status": "published",
+    "confidence": "high",
+    "confidence_rationale": "Trabalho citado internacionalmente.",
+    "sources": []
+  }
+]

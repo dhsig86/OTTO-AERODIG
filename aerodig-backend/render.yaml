@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: otto-aerodig-api
+    runtime: python
+    rootDir: aerodig-backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: FIREBASE_SERVICE_ACCOUNT_JSON
+        sync: false
+      - key: DEEPSEEK_API_KEY
+        sync: false
+      - key: PUBMED_API_KEY
+        sync: false
+      - key: NEWS_CRON_SECRET
+        sync: false
+      - key: FRONTEND_URL
+        value: https://otto-aerodig.vercel.app
+
+  - type: cron
+    name: otto-aerodig-pubmed-daily
+    runtime: python
+    rootDir: aerodig-backend
+    schedule: "0 9 * * *"  # 06:00 BRT = 09:00 UTC
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m jobs.pubmed_daily
+    envVars:
+      - key: FIREBASE_SERVICE_ACCOUNT_JSON
+        sync: false
+      - key: DEEPSEEK_API_KEY
+        sync: false
+      - key: PUBMED_API_KEY
+        sync: false

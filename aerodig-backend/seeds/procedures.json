@@ -1,0 +1,263 @@
+[
+  {
+    "id": "supraglotoplastia",
+    "slug": "supraglotoplastia",
+    "title_pt": "Supraglotoplastia",
+    "title_en": "Supraglottoplasty",
+    "audience": "pediatric",
+    "surgical": true,
+    "approach": "endoscopic",
+    "indications": [
+      "Laringomalácia grave com falha de ganho ponderal",
+      "Apneia obstrutiva associada à laringomalácia",
+      "Cor pulmonale incipiente"
+    ],
+    "contraindications": [
+      "Laringomalácia leve com sintomas controlados",
+      "Lesão sincrônica não tratada de via aérea inferior"
+    ],
+    "technique_notes": "Liberação das pregas ariepiglóticas e/ou ressecção de mucosa redundante. Pode ser unilateral ou bilateral. Microlaringoscopia + microinstrumental ± laser CO2.",
+    "outcome_set": {
+      "decannulation": "Não aplicável (pacientes geralmente sem traqueostomia prévia)",
+      "reintervention": "Cerca de 5-10% requer revisão",
+      "voice": "Geralmente preservada",
+      "swallow": "Aspiração transitória relatada em parte dos casos; FEES/VFSS pré e pós-op",
+      "complications": "Sangramento, supraglotic stenosis, edema",
+      "followup": "Avaliação clínica em 4 semanas; FEES se aspiração persistente"
+    },
+    "learning_curve_evidence": "Curva relativamente curta para otorrinolaringologistas pediátricos com treino em microcirurgia laríngea.",
+    "centers_high_volume": ["unicamp", "hcpa-ufrgs", "cincinnati-children"],
+    "confidence": "high",
+    "confidence_rationale": "Procedimento estabelecido com séries amplas e desfechos consistentes.",
+    "sources": [
+      {"title": "Supraglottoplasty for severe laryngomalacia: outcomes", "year": 2018, "source_type": "review"}
+    ]
+  },
+  {
+    "id": "ltr-laringotracheal-reconstruction",
+    "slug": "ltr-laringotracheal-reconstruction",
+    "title_pt": "Reconstrução laringotraqueal (LTR)",
+    "title_en": "Laryngotracheal reconstruction",
+    "audience": "pediatric",
+    "surgical": true,
+    "approach": "open",
+    "indications": [
+      "Estenose subglótica/laringotraqueal Myer-Cotton II-IV",
+      "Falha de manejo endoscópico repetido",
+      "Necessidade de aumentar lúmen via aérea para decanulação"
+    ],
+    "contraindications": [
+      "DRGE/EoE não controlados",
+      "Comorbidades pulmonares descompensadas",
+      "Infecção ativa local"
+    ],
+    "technique_notes": "Splint cartilaginoso anterior ± posterior (costal/auricular). Pode ser em estágio único ou duplo (com traqueostomia mantida).",
+    "outcome_set": {
+      "decannulation": "70-90% em séries pediátricas selecionadas",
+      "reintervention": "Granuloma anterior, restenose: 15-25%",
+      "voice": "Pode haver redução transitória; voz funcional na maioria",
+      "swallow": "Aspiração transitória possível",
+      "complications": "Granulomas, restenose, deiscência, lesão de prega vocal",
+      "followup": "Endoscopias seriadas; multidisciplinar fono/pulm/GI"
+    },
+    "learning_curve_evidence": "Procedimento de centro de referência; curva longa.",
+    "centers_high_volume": ["unicamp", "cincinnati-children", "chuv-lausanne"],
+    "confidence": "high",
+    "confidence_rationale": "Procedimento referência mundial em estenose pediátrica complexa.",
+    "sources": [
+      {"title": "Long-term outcomes of laryngotracheal reconstruction", "authors": "Cotton RT, et al.", "year": 2010, "source_type": "review"}
+    ]
+  },
+  {
+    "id": "pctr-cricotracheal-resection",
+    "slug": "pctr-cricotracheal-resection",
+    "title_pt": "Ressecção cricotraqueal parcial (PCTR)",
+    "title_en": "Partial cricotracheal resection",
+    "audience": "pediatric",
+    "surgical": true,
+    "approach": "open",
+    "indications": [
+      "Estenose subglótica grau III-IV com cricoide envolvido",
+      "Falha de LTR com splint",
+      "Estenose curta e densa em adolescente"
+    ],
+    "contraindications": [
+      "Lesão de pregas vocais associada não corrigida",
+      "Distância insuficiente para anastomose primária"
+    ],
+    "technique_notes": "Ressecção da subglote estenótica com anastomose tireocricoide-traqueal. Escola de Monnier (Lausanne).",
+    "outcome_set": {
+      "decannulation": ">90% em séries do CHUV em pacientes selecionados",
+      "reintervention": "Granulomas e restenose: <15%",
+      "voice": "Geralmente preservada; risco de paralisia recorrencial",
+      "swallow": "Avaliar pré e pós-op",
+      "complications": "Lesão recorrencial, deiscência, fístula",
+      "followup": "Endoscopia, fono e pneumo"
+    },
+    "learning_curve_evidence": "Centros de altíssimo volume mostram melhores desfechos.",
+    "centers_high_volume": ["chuv-lausanne", "cincinnati-children"],
+    "confidence": "high",
+    "confidence_rationale": "Marco técnico da escola de Monnier com séries longitudinais.",
+    "sources": [
+      {"title": "Partial cricotracheal resection for pediatric subglottic stenosis", "authors": "Monnier P, et al.", "year": 2003, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "slide-tracheoplasty",
+    "slug": "slide-tracheoplasty",
+    "title_pt": "Slide tracheoplasty",
+    "title_en": "Slide tracheoplasty",
+    "audience": "pediatric",
+    "surgical": true,
+    "approach": "open",
+    "indications": [
+      "Estenose traqueal congênita por anéis completos",
+      "Estenose traqueal longa adquirida em casos selecionados"
+    ],
+    "contraindications": [
+      "Cardiopatia descompensada não corrigível no mesmo tempo cirúrgico"
+    ],
+    "technique_notes": "Secção transversa do segmento estenótico, secção longitudinal anterior e posterior em metades, deslizamento e anastomose. Frequentemente combinada com correção de sling.",
+    "outcome_set": {
+      "decannulation": "Alta taxa quando sem traqueostomia prévia",
+      "reintervention": "Restenose ~10-15%",
+      "voice": "Geralmente preservada",
+      "swallow": "Geralmente sem impacto",
+      "complications": "Granulomas, restenose, infecção pulmonar",
+      "followup": "Broncoscopias seriadas; equipe de cardio-cirurgia integrada"
+    },
+    "learning_curve_evidence": "Procedimento exclusivo de centros torácicos pediátricos de alto volume.",
+    "centers_high_volume": ["cincinnati-children", "chuv-lausanne"],
+    "confidence": "high",
+    "confidence_rationale": "Padrão-ouro contemporâneo para estenose por anéis completos.",
+    "sources": [
+      {"title": "Slide tracheoplasty for long-segment tracheal stenosis", "year": 2020, "source_type": "review"}
+    ]
+  },
+  {
+    "id": "aortopexia",
+    "slug": "aortopexia",
+    "title_pt": "Aortopexia",
+    "title_en": "Aortopexy",
+    "audience": "pediatric",
+    "surgical": true,
+    "approach": "open",
+    "indications": [
+      "Traqueomalácia grave anterior com sintomas refratários",
+      "BRUE/apneia obstrutiva associada à malácia"
+    ],
+    "contraindications": [
+      "Malácia posterior dominante (preferir tracheopexy posterior)"
+    ],
+    "technique_notes": "Suspensão da aorta ascendente ao esterno, tracionando anteriormente a parede traqueal. Pode ser por toracotomia, esternotomia parcial ou toracoscopia.",
+    "outcome_set": {
+      "decannulation": "Quando aplicável, alta taxa",
+      "reintervention": "5-15%",
+      "voice": "Sem impacto direto",
+      "swallow": "Sem impacto direto",
+      "complications": "Lesão de timo/pleura, sangramento",
+      "followup": "Broncoscopia dinâmica de controle"
+    },
+    "centers_high_volume": ["cincinnati-children", "boston-children"],
+    "confidence": "high",
+    "confidence_rationale": "Procedimento clássico com séries amplas.",
+    "sources": [
+      {"title": "Aortopexy for severe tracheomalacia", "year": 2019, "source_type": "review"}
+    ]
+  },
+  {
+    "id": "tracheopexy-posterior",
+    "slug": "tracheopexy-posterior",
+    "title_pt": "Tracheopexy posterior",
+    "title_en": "Posterior tracheopexy",
+    "audience": "pediatric",
+    "surgical": true,
+    "approach": "open",
+    "indications": [
+      "Malácia posterior dominante",
+      "Traqueomalácia em pacientes EA/FTE com síntomas residuais"
+    ],
+    "contraindications": [
+      "Malácia anterior isolada (preferir aortopexia)"
+    ],
+    "technique_notes": "Fixação da membrana traqueal posterior à fáscia pré-vertebral, restabelecendo geometria.",
+    "outcome_set": {
+      "decannulation": "Variável conforme severidade prévia",
+      "reintervention": "Reportada em séries; <15%",
+      "voice": "Sem impacto direto",
+      "swallow": "Sem impacto direto",
+      "complications": "Lesão esofágica, sangramento",
+      "followup": "Broncoscopia dinâmica e avaliação multidisciplinar"
+    },
+    "centers_high_volume": ["boston-children"],
+    "confidence": "moderate",
+    "confidence_rationale": "Técnica em adoção crescente; séries clínicas em consolidação.",
+    "sources": [
+      {"title": "Posterior tracheopexy outcomes", "year": 2021, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "dilatacao-endoscopica",
+    "slug": "dilatacao-endoscopica",
+    "title_pt": "Dilatação endoscópica de via aérea",
+    "title_en": "Endoscopic airway dilation",
+    "audience": "both",
+    "surgical": true,
+    "approach": "endoscopic",
+    "indications": [
+      "Estenose curta e fina",
+      "Manejo inicial de lesão pós-intubação aguda",
+      "Bridge para reconstrução definitiva"
+    ],
+    "contraindications": [
+      "Estenose madura, longa e densa (LTR/PCTR são preferidos)",
+      "Falência respiratória que exige via aérea definitiva"
+    ],
+    "technique_notes": "Balão controlado por pressão; eventualmente associado a CO2 laser ou injeção de corticoide.",
+    "outcome_set": {
+      "decannulation": "Quando indicada como tratamento definitivo, sucesso variável",
+      "reintervention": "Múltiplas dilatações comuns",
+      "voice": "Geralmente preservada",
+      "swallow": "Sem impacto",
+      "complications": "Ruptura, granuloma, restenose precoce",
+      "followup": "Endoscopia em intervalos curtos no início"
+    },
+    "centers_high_volume": ["unicamp", "hcpa-ufrgs"],
+    "confidence": "high",
+    "confidence_rationale": "Procedimento padrão na primeira linha de várias estenoses.",
+    "sources": [
+      {"title": "Endoscopic management of laryngotracheal stenosis", "year": 2018, "source_type": "review"}
+    ]
+  },
+  {
+    "id": "correcao-fenda-laringea-endoscopica",
+    "slug": "correcao-fenda-laringea-endoscopica",
+    "title_pt": "Correção endoscópica de fenda laríngea (Tipo I-II)",
+    "title_en": "Endoscopic laryngeal cleft repair",
+    "audience": "pediatric",
+    "surgical": true,
+    "approach": "endoscopic",
+    "indications": [
+      "Fenda laríngea Tipo I com aspiração persistente",
+      "Tipo II em casos selecionados"
+    ],
+    "contraindications": [
+      "Tipo III/IV (exigem abordagem aberta)"
+    ],
+    "technique_notes": "Sutura endoscópica em dois planos da fenda interaritenoide. Em Tipo I sintomático, injeção de bulking pode ser tentada antes.",
+    "outcome_set": {
+      "decannulation": "Não aplicável",
+      "reintervention": "5-15% em séries",
+      "voice": "Preservada",
+      "swallow": "Melhora documentada por FEES/VFSS na maioria",
+      "complications": "Deiscência, granuloma",
+      "followup": "FEES seriado"
+    },
+    "centers_high_volume": ["cincinnati-children", "boston-children"],
+    "confidence": "high",
+    "confidence_rationale": "Técnica consolidada em centros pediátricos.",
+    "sources": [
+      {"title": "Endoscopic repair of type I laryngeal cleft", "year": 2017, "source_type": "review"}
+    ]
+  }
+]

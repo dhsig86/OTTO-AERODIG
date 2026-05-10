@@ -1,0 +1,79 @@
+{
+  "id": "laringomalacia",
+  "slug": "laringomalacia",
+  "title_pt": "Laringomalácia",
+  "title_en": "Laryngomalacia",
+  "audience": "pediatric",
+  "domain": "larynx",
+  "age_range": ["neonate", "infant"],
+  "summary": "Causa mais comum de estridor em lactentes. Colapso dinâmico das estruturas supraglóticas durante a inspiração. A maioria dos casos melhora entre 12 e 24 meses; uma minoria significativa (graves) exige avaliação multiprofissional e supraglotoplastia.",
+  "confidence": "high",
+  "confidence_rationale": "Classificações Olney/Shah/Groningen recorrentes em diretrizes e revisões; supraglotoplastia é padrão de cuidado em casos graves.",
+  "classifications": [
+    {
+      "name": "Olney (tipos anatômicos)",
+      "author_year": "Olney, 1999",
+      "description": "Tipo 1: prolapso de mucosa aritenoide; Tipo 2: pregas ariepiglóticas curtas; Tipo 3: deslocamento posterior da epiglote.",
+      "pediatric_validated": true
+    },
+    {
+      "name": "Shah/SWAN (gravidade clínica)",
+      "author_year": "Shah, 2007",
+      "description": "Estratifica leve / moderada / grave por estridor, alimentação, ganho ponderal, cianose e apneia.",
+      "pediatric_validated": true
+    },
+    {
+      "name": "Groningen (simplificada)",
+      "author_year": "van der Heijden, 2015",
+      "description": "Sistema unificado moderno: leve / moderado / grave com critérios objetivos.",
+      "pediatric_validated": true
+    }
+  ],
+  "red_flags": [
+    "Cianose ou apneia",
+    "Dificuldade alimentar com falha de ganho ponderal",
+    "Pectus excavatum em evolução",
+    "Cor pulmonale (raro mas crítico)",
+    "SatO2 < 90% no sono"
+  ],
+  "key_exams": [
+    "Nasofibrolaringoscopia em vigília (padrão diagnóstico)",
+    "DISE (drug-induced sleep endoscopy) em casos atípicos",
+    "Polissonografia se suspeita de SAOS",
+    "Broncoscopia para excluir lesão sincrônica",
+    "VFSS/FEES se aspiração suspeita"
+  ],
+  "common_pitfalls": [
+    "Atribuir todo estridor à laringomalácia sem broncoscopia em casos atípicos",
+    "Subestimar a sobreposição com DRGE — tratar empiricamente quando indicado",
+    "Indicar supraglotoplastia precoce em quadros leves que melhorariam espontaneamente"
+  ],
+  "associated_pathways": ["estridor-no-lactente"],
+  "associated_procedures": ["supraglotoplastia"],
+  "associated_instruments": [],
+  "epidemiology_global": "Causa de 60-75% dos estridores neonatais persistentes. Incidência precisa não definida; estudos epidemiológicos populacionais são escassos.",
+  "epidemiology_brazil": "Sem censo nacional. Séries hospitalares brasileiras (UNICAMP, HCPA) reproduzem a mesma proporção entre estridores avaliados.",
+  "sources": [
+    {
+      "title": "Type-based classification of laryngomalacia",
+      "authors": "Olney DR, Greinwald JH, Smith RJ, Bauman NM",
+      "journal": "Laryngoscope",
+      "year": 1999,
+      "pmid": "10580724",
+      "source_type": "primary"
+    },
+    {
+      "title": "Severity assessment scale for laryngomalacia",
+      "authors": "Shah RK, et al.",
+      "journal": "Otolaryngol Head Neck Surg",
+      "year": 2007,
+      "source_type": "primary"
+    },
+    {
+      "title": "Groningen Laryngomalacia Classification System",
+      "authors": "van der Heijden M, et al.",
+      "year": 2015,
+      "source_type": "primary"
+    }
+  ]
+}

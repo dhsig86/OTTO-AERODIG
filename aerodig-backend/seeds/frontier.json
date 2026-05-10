@@ -1,0 +1,110 @@
+[
+  {
+    "id": "splints-3d-bioabsorvivel",
+    "slug": "splints-3d-bioabsorvivel",
+    "title_pt": "Splints traqueais bioabsorvíveis impressos em 3D",
+    "title_en": "3D-printed bioabsorbable airway splints",
+    "audience": "pediatric",
+    "technology": "3d_printing",
+    "maturity": "translational",
+    "summary": "Splints customizados de policaprolactona impressos em 3D para sustentação de via aérea em malácia grave. Primeiro caso humano (Kaiba Gionfriddo, Michigan, 2013). Séries clínicas iniciais positivas mas adoção restrita a centros translacionais.",
+    "available_in_brazil": false,
+    "anvisa_status": "Sem registro específico de splint personalizado bioabsorvível para via aérea pediátrica identificado.",
+    "cost_signal": "high",
+    "confidence": "moderate",
+    "confidence_rationale": "Tecnologia promissora com séries iniciais; ainda altamente especializada.",
+    "sources": [
+      {"title": "Bioresorbable airway splint created with a three-dimensional printer", "authors": "Zopf DA, et al.", "year": 2013, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "ia-laringoscopia",
+    "slug": "ia-laringoscopia",
+    "title_pt": "IA aplicada à videolaringoscopia pediátrica",
+    "title_en": "AI in pediatric laryngoscopy",
+    "audience": "pediatric",
+    "technology": "ai",
+    "maturity": "exploratory",
+    "summary": "Modelos de visão computacional para detecção de estenose, papiloma, fenda laríngea em vídeo endoscópico. Scoping review 2024 mostra crescimento, mas validação clínica ainda incipiente.",
+    "available_in_brazil": false,
+    "anvisa_status": "Sem dispositivos médicos baseados em IA específicos para via aérea pediátrica identificados.",
+    "cost_signal": "medium",
+    "confidence": "low",
+    "confidence_rationale": "Área em rápida expansão; sem padrão consolidado de aplicação clínica.",
+    "sources": [
+      {"title": "Scoping review of AI in pediatric airway", "year": 2024, "source_type": "review"}
+    ]
+  },
+  {
+    "id": "exoma-em-via-aerea-complexa",
+    "slug": "exoma-em-via-aerea-complexa",
+    "title_pt": "Exoma e painéis genéticos em via aérea complexa",
+    "title_en": "Whole exome and gene panels in complex pediatric airway",
+    "audience": "pediatric",
+    "technology": "genomics",
+    "maturity": "clinical_trial",
+    "summary": "Yield diagnóstico de exoma em crianças com via aérea complexa varia entre estudos. Implicações para aconselhamento genético e plano longitudinal.",
+    "available_in_brazil": true,
+    "anvisa_status": "Painéis genéticos clínicos disponíveis em laboratórios privados; cobertura SUS muito limitada.",
+    "cost_signal": "high",
+    "confidence": "moderate",
+    "confidence_rationale": "Adoção crescente em centros terciários; falta padronização de indicação.",
+    "sources": [
+      {"title": "Genomic yield in pediatric complex airway disease", "year": 2022, "source_type": "review"}
+    ]
+  },
+  {
+    "id": "engenharia-tecidual-traqueal",
+    "slug": "engenharia-tecidual-traqueal",
+    "title_pt": "Engenharia tecidual traqueal (scaffolds celulares)",
+    "title_en": "Tracheal tissue engineering",
+    "audience": "pediatric",
+    "technology": "tissue_engineering",
+    "maturity": "exploratory",
+    "summary": "Scaffolds biológicos com semeadura celular para reconstrução traqueal complexa. Resultados clínicos iniciais conflitantes; vários casos com complicações tardias.",
+    "available_in_brazil": false,
+    "anvisa_status": "Pesquisa pré-clínica.",
+    "cost_signal": "high",
+    "confidence": "low",
+    "confidence_rationale": "Resultados conflitantes e questões éticas em casos publicados.",
+    "sources": [
+      {"title": "Tissue engineering for tracheal reconstruction", "year": 2020, "source_type": "review"}
+    ]
+  },
+  {
+    "id": "biomarcadores-eoe",
+    "slug": "biomarcadores-eoe",
+    "title_pt": "Biomarcadores em EoE pediátrica",
+    "title_en": "Biomarkers in pediatric EoE",
+    "audience": "pediatric",
+    "technology": "biomarker",
+    "maturity": "clinical_trial",
+    "summary": "EOSINONet, swallowed strings (Cytosponge), painéis de citocinas. Promissores para reduzir endoscopias seriadas, mas adoção em fluxos pediátricos ainda limitada.",
+    "available_in_brazil": false,
+    "anvisa_status": "Não localizado.",
+    "cost_signal": "medium",
+    "confidence": "moderate",
+    "confidence_rationale": "Validação em adultos avança; pediatria em consolidação.",
+    "sources": [
+      {"title": "Non-invasive monitoring of EoE", "year": 2023, "source_type": "review"}
+    ]
+  },
+  {
+    "id": "vosoritide-acondroplasia",
+    "slug": "vosoritide-acondroplasia",
+    "title_pt": "Vosoritide e via aérea central na acondroplasia",
+    "title_en": "Vosoritide and central airway in achondroplasia",
+    "audience": "pediatric",
+    "technology": "biomarker",
+    "maturity": "approved_specialized",
+    "summary": "Análogo de CNP aprovado para acelerar crescimento em acondroplasia. Implicações indiretas sobre via aérea central, forame magno, SAOS — em avaliação.",
+    "available_in_brazil": true,
+    "anvisa_status": "Em avaliação regulatória; cobertura limitada.",
+    "cost_signal": "high",
+    "confidence": "moderate",
+    "confidence_rationale": "Aprovação recente; impacto sobre desfechos aerodigestivos a longo prazo a validar.",
+    "sources": [
+      {"title": "Vosoritide in achondroplasia: phase 3", "year": 2021, "source_type": "primary"}
+    ]
+  }
+]

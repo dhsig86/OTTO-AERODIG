@@ -1,0 +1,95 @@
+[
+  {
+    "id": "estridor-no-lactente",
+    "slug": "estridor-no-lactente",
+    "title_pt": "Estridor no lactente",
+    "title_en": "Stridor in infants",
+    "audience": "pediatric",
+    "entry_symptom": "Estridor inspiratório, bifásico ou expiratório no lactente",
+    "summary": "Algoritmo de avaliação inicial integrando história, exame, endoscopia flexível e indicações de broncoscopia rígida.",
+    "confidence": "high",
+    "confidence_rationale": "Algoritmo derivado de consenso aerodigestivo e prática rotineira.",
+    "nodes": [
+      {"id": "n1", "label": "Estridor no lactente", "node_type": "entry"},
+      {"id": "n2", "label": "Avaliação clínica + history of intubation/extubation", "node_type": "decision"},
+      {"id": "n3", "label": "Nasofibrolaringoscopia em vigília", "node_type": "exam"},
+      {"id": "n4", "label": "Achado de laringomalácia isolada com sintomas leves?", "node_type": "decision"},
+      {"id": "n5", "label": "Broncoscopia rígida (lesão sincrônica suspeita)", "node_type": "exam"},
+      {"id": "n6", "label": "Manejo conservador + reavaliação", "node_type": "intervention"},
+      {"id": "n7", "label": "Tratamento direcionado (supraglotoplastia / dilatação / LTR)", "node_type": "intervention"}
+    ],
+    "edges": [
+      {"from_node": "n1", "to_node": "n2"},
+      {"from_node": "n2", "to_node": "n3"},
+      {"from_node": "n3", "to_node": "n4"},
+      {"from_node": "n4", "to_node": "n6", "condition_label": "Sim → conservador"},
+      {"from_node": "n4", "to_node": "n5", "condition_label": "Não → broncoscopia"},
+      {"from_node": "n5", "to_node": "n7"}
+    ],
+    "output_artifacts": ["laringomalacia", "estenose-subglotica", "supraglotoplastia"],
+    "sources": [
+      {"title": "Aerodigestive consensus 2018", "year": 2018, "source_type": "consensus"}
+    ]
+  },
+  {
+    "id": "falha-extubacao",
+    "slug": "falha-extubacao",
+    "title_pt": "Falha de extubação ou estridor pós-extubação",
+    "title_en": "Failed extubation or post-extubation stridor",
+    "audience": "pediatric",
+    "entry_symptom": "Estridor persistente ou re-intubação após tentativa de extubação",
+    "summary": "Algoritmo orientado por timing — avaliação endoscópica precoce determina janela de prevenção da estenose.",
+    "confidence": "high",
+    "confidence_rationale": "Derivado de evidência sobre lesão aguda (CALI) e janela terapêutica.",
+    "nodes": [
+      {"id": "n1", "label": "Falha de extubação ou estridor pós-extubação", "node_type": "entry"},
+      {"id": "n2", "label": "Endoscopia flexível em <72h", "node_type": "exam"},
+      {"id": "n3", "label": "Lesão aguda (CALI) presente?", "node_type": "decision"},
+      {"id": "n4", "label": "Manejo conservador + reavaliação seriada", "node_type": "intervention"},
+      {"id": "n5", "label": "Microlaringoscopia + intervenção (dilatação/CO2/corticoide)", "node_type": "intervention"},
+      {"id": "n6", "label": "Estenose estabelecida → reconstrução (LTR/PCTR)", "node_type": "intervention"}
+    ],
+    "edges": [
+      {"from_node": "n1", "to_node": "n2"},
+      {"from_node": "n2", "to_node": "n3"},
+      {"from_node": "n3", "to_node": "n4", "condition_label": "Lesão leve"},
+      {"from_node": "n3", "to_node": "n5", "condition_label": "Lesão moderada/grave"},
+      {"from_node": "n5", "to_node": "n6", "condition_label": "Evolução → estenose"}
+    ],
+    "output_artifacts": ["lesao-pos-intubacao", "estenose-subglotica", "dilatacao-endoscopica", "ltr-laringotracheal-reconstruction"],
+    "sources": [
+      {"title": "Acute laryngeal injuries in children", "year": 2017, "source_type": "primary"}
+    ]
+  },
+  {
+    "id": "aspiracao-cronica",
+    "slug": "aspiracao-cronica",
+    "title_pt": "Aspiração crônica e disfagia pediátrica",
+    "title_en": "Chronic aspiration and pediatric dysphagia",
+    "audience": "pediatric",
+    "entry_symptom": "Tosse com alimentação, pneumonias de repetição, voz molhada após deglutição",
+    "summary": "Avaliação integrada que inclui FEES/VFSS, exclusão de fenda laríngea anatômica e investigação de DRGE/EoE.",
+    "confidence": "high",
+    "confidence_rationale": "Coerente com consenso aerodigestivo e standards California.",
+    "nodes": [
+      {"id": "n1", "label": "Aspiração / disfagia crônica", "node_type": "entry"},
+      {"id": "n2", "label": "FEES e/ou VFSS", "node_type": "exam"},
+      {"id": "n3", "label": "Aspiração silenciosa documentada?", "node_type": "decision"},
+      {"id": "n4", "label": "Microlaringoscopia + palpação para excluir fenda", "node_type": "exam"},
+      {"id": "n5", "label": "Investigar DRGE/EoE (pH-impedância, EDA com biópsias)", "node_type": "exam"},
+      {"id": "n6", "label": "Reabilitação fono + manejo direcionado", "node_type": "intervention"}
+    ],
+    "edges": [
+      {"from_node": "n1", "to_node": "n2"},
+      {"from_node": "n2", "to_node": "n3"},
+      {"from_node": "n3", "to_node": "n4", "condition_label": "Sim"},
+      {"from_node": "n3", "to_node": "n5", "condition_label": "Não / parcial"},
+      {"from_node": "n4", "to_node": "n6"},
+      {"from_node": "n5", "to_node": "n6"}
+    ],
+    "output_artifacts": ["fenda-laringea", "disfagia-aspiracao", "eoe-drge-saos-pediatrico"],
+    "sources": [
+      {"title": "Aerodigestive consensus 2018", "year": 2018, "source_type": "consensus"}
+    ]
+  }
+]
