@@ -2,7 +2,7 @@
 Pydantic schemas - modelo de conteudo do OTTO Aerodigestive Hub.
 """
 from datetime import date, datetime
-from typing import Literal, Optional
+from typing import Any, Literal, Optional
 
 from pydantic import BaseModel, Field
 
@@ -180,7 +180,7 @@ class Calculator(BaseEntity):
     inputs: list[CalculatorInput] = Field(default_factory=list)
     outputs: list[CalculatorOutput] = Field(default_factory=list)
     formula_hint: Optional[str] = None
-    reference_table: Optional[list[dict[str, Optional[str]]]] = None
+    reference_table: Optional[list[dict[str, Any]]] = None
     notes_ptbr: Optional[str] = None
 
 
