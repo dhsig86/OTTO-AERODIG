@@ -4,6 +4,7 @@ import type { Calculator } from '../types/content';
 import { ConfidenceBadge } from '../components/ConfidenceBadge';
 import { TracheostomyConverter } from '../components/TracheostomyConverter';
 import { GenericCalculator } from '../components/GenericCalculator';
+import { MyCottonCalculator } from '../components/MyCottonCalculator';
 import { ReferencesPanel } from '../components/ReferencesPanel';
 
 export function CalculatorsPage() {
@@ -51,12 +52,7 @@ export function CalculatorsPage() {
         <section className="mt-8 animate-fade-in">
           {current.slug === 'tracheostomy-tube-converter' ? (
             <TracheostomyConverter calc={current} />
+          ) : current.slug === 'myer-cotton-calc' ? (
+            <MyCottonCalculator calc={current} />
           ) : (
-            <GenericCalculator calc={current} />
-          )}
-          <ReferencesPanel sources={current.sources} className="mt-6" />
-        </section>
-      )}
-    </div>
-  );
-}
+      
