@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { fetchNews } from '../services/api';
 import type { NewsItem } from '../types/content';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function NewsPage() {
+  useDocumentTitle('News');
   const [items, setItems] = useState<NewsItem[]>([]);
   useEffect(() => {
     fetchNews('published').then(setItems).catch(() => setItems([]));

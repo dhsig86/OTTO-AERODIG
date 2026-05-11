@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import { fetchConditions } from '../services/api';
 import type { Condition } from '../types/content';
 import { ConditionCard } from '../components/ConditionCard';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function AtlasPage() {
+  useDocumentTitle('Atlas de condicoes');
   const [items, setItems] = useState<Condition[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);

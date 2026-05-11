@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { fetchFrontier } from '../services/api';
 import type { FrontierItem } from '../types/content';
 import { ConfidenceBadge } from '../components/ConfidenceBadge';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 const MATURITY_LABEL: Record<string, string> = {
   exploratory: 'Exploratório',
@@ -12,6 +13,7 @@ const MATURITY_LABEL: Record<string, string> = {
 };
 
 export function FrontierPage() {
+  useDocumentTitle('Radar de fronteira');
   const [items, setItems] = useState<FrontierItem[]>([]);
   useEffect(() => {
     fetchFrontier().then(setItems).catch(() => setItems([]));

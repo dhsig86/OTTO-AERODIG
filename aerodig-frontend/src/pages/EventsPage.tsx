@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { fetchEvents } from '../services/api';
 import type { Event } from '../types/content';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function EventsPage() {
+  useDocumentTitle('Eventos');
   const [items, setItems] = useState<Event[]>([]);
   useEffect(() => {
     fetchEvents().then(setItems).catch(() => setItems([]));

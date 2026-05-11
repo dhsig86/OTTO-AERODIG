@@ -2,27 +2,59 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { search as searchApi } from '../services/api';
 import type { SearchResult } from '../types/content';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
-const ROUTE_BY_TYPE: Record<string, (slug: string) => string> = {
-  condition: (s) => `/atlas/${s}`,
-  pathway: () => `/pathways`,
-  instrument: () => `/instruments`,
-  procedure: () => `/procedures`,
-  frontier: () => `/frontier`,
-  network: () => `/network`,
-  news: () => `/news`,
-  event: () => `/events`,
+const TYPE_LABEL: Record<string, string> = {
+  condition: 'Condicao',
+  pathway: 'Pathway',
+  instrument: 'Instrumento',
+  procedure: 'Procedimento',
+  frontier: 'Fronteira',
+  network: 'Rede',
+  news: 'News',
+  event: 'Evento',
 };
 
+/** Retorna rota + state.highlight para deep-link no destino */
+function resolveLink(entityType: string, slug: string): { to: string; state?: object } {
+  switch (entityType) {
+    case 'condition':
+      return { to: `/atlas/${slug}` };
+    case 'pathway':
+      return { to: '/pathways', state: { highlight: slug } };
+    case 'instrument':
+      return { to: '/instruments', state: { highlight: slug } };
+    case 'procedure':
+      return { to: '/procedures', state: { highlight: slug } };
+    case 'frontier':
+      return { to: '/frontier' };
+    case 'network':
+      return { to: '/network' };
+    case 'news':
+      return { to: '/news' };
+    case 'event':
+      return { to: '/events' };
+    default:
+      return { to: '/' };
+  }
+}
+
 export function SearchPage() {
+  useDocumentTitle('Buscar');
   const [q, setQ] = useState('');
   const [result, setResult] = useState<SearchResult | null>(null);
+  const [loading, setLoading] = useState(false);
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!q.trim()) return;
-    const r = await searchApi(q.trim());
-    setResult(r);
+    setLoading(true);
+    try {
+      const r = await searchApi(q.trim());
+      setResult(r);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -32,41 +64,16 @@ export function SearchPage() {
         Busca cross-camadas — Atlas, Pathways, Instrumentos, Procedimentos, Fronteira, Rede, News e
         Eventos.
       </p>
+
       <form onSubmit={onSubmit} className="mb-6 flex gap-2">
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="estridor, fenda laríngea, EoE…"
           className="flex-1 border border-otto-border rounded-lg px-3 py-2 outline-none focus:border-otto-primary"
+          autoFocus
         />
         <button
           type="submit"
-          className="px-4 py-2 rounded-lg bg-otto-dark text-white text-sm hover:bg-otto-primary"
-        >
-          Buscar
-        </button>
-      </form>
-
-      {result && (
-        <p className="text-sm text-otto-muted mb-3">
-          {result.total} resultado(s) para “{result.query}”
-        </p>
-      )}
-
-      <ul className="space-y-3">
-        {result?.hits.map((h) => (
-          <li key={`${h.entity_type}-${h.slug}`} className="card">
-            <p className="text-xs uppercase text-otto-muted mb-1">{h.entity_type}</p>
-            <Link
-              to={ROUTE_BY_TYPE[h.entity_type]?.(h.slug) ?? '/'}
-              className="font-semibold hover:underline"
-            >
-              {h.title_pt}
-            </Link>
-            {h.excerpt && <p className="text-sm text-otto-text/80 mt-1">{h.excerpt}</p>}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+          disabled={loading}
+          className="px-4 py-2 rounded

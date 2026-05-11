@@ -5,9 +5,12 @@ import { ConfidenceBadge } from '../components/ConfidenceBadge';
 import { TracheostomyConverter } from '../components/TracheostomyConverter';
 import { GenericCalculator } from '../components/GenericCalculator';
 import { MyCottonCalculator } from '../components/MyCottonCalculator';
+import { PediEat10Calculator } from '../components/PediEat10Calculator';
 import { ReferencesPanel } from '../components/ReferencesPanel';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function CalculatorsPage() {
+  useDocumentTitle('Calculadoras');
   const [items, setItems] = useState<Calculator[]>([]);
   const [active, setActive] = useState<string | null>(null);
 
@@ -53,6 +56,3 @@ export function CalculatorsPage() {
           {current.slug === 'tracheostomy-tube-converter' ? (
             <TracheostomyConverter calc={current} />
           ) : current.slug === 'myer-cotton-calc' ? (
-            <MyCottonCalculator calc={current} />
-          ) : (
-      

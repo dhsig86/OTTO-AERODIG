@@ -1,0 +1,603 @@
+[
+  {
+    "id": "atresia-esofago-fte",
+    "slug": "atresia-esofago-fte",
+    "title_pt": "Atresia de esôfago e fístula traqueoesofágica (EA/TEF)",
+    "title_en": "Esophageal atresia and tracheoesophageal fistula",
+    "audience": "pediatric",
+    "domain": "esophagus",
+    "age_range": [
+      "neonate",
+      "infant",
+      "toddler",
+      "school",
+      "adolescent"
+    ],
+    "summary": "Malformação aerodigestiva por excelência: incidência ~1:2.500-4.000 nascidos vivos. Cuidado longitudinal — não termina na neonatologia. Sequelas frequentes: traqueomalácia, estenose anastomótica, DRGE, disfagia, EoE secundária, problemas pulmonares crônicos.",
+    "confidence": "high",
+    "confidence_rationale": "Diretrizes ESPGHAN e séries multicêntricas convergem em manejo e seguimento.",
+    "classifications": [
+      {
+        "name": "Gross (anatômica)",
+        "author_year": "Gross, 1953",
+        "description": "Tipos A-E: A=atresia sem fístula; B=fístula proximal; C=atresia com fístula distal (mais comum); D=fístulas duplas; E=fístula em H sem atresia.",
+        "pediatric_validated": true
+      }
+    ],
+    "red_flags": [
+      "Salivação excessiva no neonato com sonda que não progride",
+      "Episódios de cianose com alimentação",
+      "Pneumonia de repetição em mesma topografia em criança operada"
+    ],
+    "key_exams": [
+      "Esofagograma contrastado",
+      "Broncoscopia para identificar fístula em H ou recorrência",
+      "Endoscopia digestiva alta + biópsias para EoE no seguimento",
+      "pH-impedanciometria",
+      "VFSS/FEES para disfagia"
+    ],
+    "common_pitfalls": [
+      "Encerrar seguimento após cirurgia neonatal",
+      "Não rastrear EoE na disfagia tardia",
+      "Subestimar traqueomalácia residual"
+    ],
+    "associated_pathways": [
+      "aspiracao-cronica"
+    ],
+    "associated_procedures": [
+      "dilatacao-endoscopica"
+    ],
+    "associated_instruments": [
+      "pedi-eat-10"
+    ],
+    "epidemiology_global": "1:2.500 a 1:4.000 nascidos vivos. Maioria sobrevive na era moderna.",
+    "epidemiology_brazil": "Estudo populacional do Estado de São Paulo mostrou tendência crescente de prevalência registrada.",
+    "sources": [
+      {
+        "title": "ESPGHAN/NASPGHAN guidelines for the evaluation and treatment of gastrointestinal and nutritional complications in children with esophageal atresia",
+        "year": 2016,
+        "source_type": "guideline"
+      }
+    ]
+  },
+  {
+    "id": "disfagia-aspiracao",
+    "slug": "disfagia-aspiracao",
+    "title_pt": "Disfagia e aspiração pediátrica",
+    "title_en": "Pediatric dysphagia and aspiration",
+    "audience": "pediatric",
+    "domain": "swallowing",
+    "age_range": [
+      "neonate",
+      "infant",
+      "toddler",
+      "school",
+      "adolescent"
+    ],
+    "summary": "Sinal-sintoma transversal do campo aerodigestivo. FEES e VFSS são considerados elementos centrais do programa, não acessórios. PEDI-EAT-10 é rastreio pediátrico útil; FOIS infantil/pediátrico está consolidado para nível funcional de alimentação oral.",
+    "confidence": "high",
+    "confidence_rationale": "Consenso aerodigestivo internacional e diretrizes de fonoaudiologia consolidam FEES/VFSS como exames centrais.",
+    "classifications": [
+      {
+        "name": "PEDI-EAT-10 (rastreio)",
+        "author_year": "Serel-Arslan, 2018",
+        "description": "10 itens; pontos de corte sugerem sintomatologia significativa.",
+        "pediatric_validated": true
+      }
+    ],
+    "red_flags": [
+      "Pneumonia de repetição",
+      "Perda ponderal ou falha em ganhar peso",
+      "Tosse persistente durante alimentação",
+      "Voz molhada após deglutição"
+    ],
+    "key_exams": [
+      "FEES (videoendoscopia da deglutição)",
+      "VFSS (videofluoroscopia da deglutição)",
+      "Avaliação fonoaudiológica clínica estruturada",
+      "Investigação de fenda laríngea quando aspiração silenciosa"
+    ],
+    "common_pitfalls": [
+      "Tratar disfagia sem investigar fenda laríngea",
+      "Importar instrumentos adultos (DOSS) sem aviso de limitação pediátrica",
+      "Não considerar EoE em criança com impactação alimentar"
+    ],
+    "associated_pathways": [
+      "aspiracao-cronica"
+    ],
+    "associated_procedures": [],
+    "associated_instruments": [
+      "pedi-eat-10",
+      "fois-pediatrico",
+      "fees-pediatrico"
+    ],
+    "epidemiology_global": "Prevalência variável conforme população (NICU graduates: até 50%; saudáveis: <1%).",
+    "epidemiology_brazil": "Sem dados populacionais; séries em centros terciários.",
+    "sources": [
+      {
+        "title": "Pediatric Eating Assessment Tool (PEDI-EAT-10)",
+        "authors": "Serel-Arslan S, Demir N, Karaduman AA",
+        "year": 2018,
+        "source_type": "primary"
+      }
+    ]
+  },
+  {
+    "id": "eoe-drge-saos-pediatrico",
+    "slug": "eoe-drge-saos-pediatrico",
+    "title_pt": "Esofagite eosinofílica, DRGE e SAOS pediátricos (cluster)",
+    "title_en": "Eosinophilic esophagitis, GERD, and pediatric OSA (cluster)",
+    "audience": "pediatric",
+    "domain": "esophagus",
+    "age_range": [
+      "infant",
+      "toddler",
+      "school",
+      "adolescent"
+    ],
+    "summary": "Tripé de comorbidades que atravessa a maioria dos casos aerodigestivos. EoE: diretriz pediátrica 2024; EREFS é escore endoscópico central; sistemas histológicos/I-SEE complementam. DRGE: diretriz NASPGHAN/ESPGHAN é o pivô; I-GERQ-R e PGSQ têm melhor aderência pediátrica que GERD-HRQL (adulto). SAOS: PSQ/SRBD é melhor rastreio pediátrico (validado em PT-BR); OSA-18 mede impacto de QoL, não diagnostica.",
+    "confidence": "high",
+    "confidence_rationale": "Diretrizes pediátricas explícitas para EoE e DRGE; PSQ tem validação em português do Brasil.",
+    "classifications": [
+      {
+        "name": "EREFS (endoscópico EoE)",
+        "author_year": "Hirano et al., 2013",
+        "description": "Edema, anéis, exsudato, sulcos, estenose — combinados em escore.",
+        "pediatric_validated": true
+      },
+      {
+        "name": "I-SEE (histológico EoE)",
+        "author_year": "Collins et al., 2022",
+        "description": "Classificação histológica integrada para gravidade e remissão.",
+        "pediatric_validated": true
+      }
+    ],
+    "red_flags": [
+      "Impactação alimentar no adolescente",
+      "Tosse noturna e crescimento prejudicado",
+      "Roncos com pausas testemunhadas"
+    ],
+    "key_exams": [
+      "Endoscopia digestiva alta com biópsias seriadas (EoE)",
+      "pH-impedanciometria para DRGE refratário",
+      "Polissonografia para SAOS",
+      "PSQ/SRBD como rastreio em consultório"
+    ],
+    "common_pitfalls": [
+      "Importar instrumento adulto (GERD-HRQL) sem ressalva pediátrica",
+      "Diagnosticar SAOS apenas por OSA-18 (mede QoL, não SAOS)",
+      "Não rastrear EoE em criança operada de EA/FTE com disfagia"
+    ],
+    "associated_pathways": [
+      "aspiracao-cronica"
+    ],
+    "associated_procedures": [],
+    "associated_instruments": [
+      "erefs",
+      "psq-srbd",
+      "i-gerq-r",
+      "osa-18"
+    ],
+    "epidemiology_global": "EoE pediátrica em ascensão. SAOS pediátrica: 1-5% prevalência.",
+    "epidemiology_brazil": "PSQ validado em PT-BR (Brasil) — ferramenta de rastreio acessível em SUS.",
+    "sources": [
+      {
+        "title": "Practical guideline for diagnosis and management of EoE in children",
+        "year": 2024,
+        "source_type": "guideline"
+      },
+      {
+        "title": "NASPGHAN/ESPGHAN clinical practice guideline for pediatric GERD",
+        "year": 2018,
+        "source_type": "guideline"
+      },
+      {
+        "title": "Validation of the Brazilian Portuguese version of the Pediatric Sleep Questionnaire",
+        "year": 2014,
+        "source_type": "primary"
+      }
+    ]
+  },
+  {
+    "id": "estenose-subglotica",
+    "slug": "estenose-subglotica",
+    "title_pt": "Estenose subglótica e laringotraqueal",
+    "title_en": "Subglottic and laryngotracheal stenosis",
+    "audience": "pediatric",
+    "domain": "larynx",
+    "age_range": [
+      "neonate",
+      "infant",
+      "toddler",
+      "school",
+      "adolescent"
+    ],
+    "summary": "Estreitamento congênito ou adquirido da subglote/laringotraqueia. Causa principal: lesão pós-intubação. Myer-Cotton gradua subglote isoladamente; ELS apoia padronização de extensão laringotraqueal.",
+    "confidence": "high",
+    "confidence_rationale": "Myer-Cotton e ELS são referência consolidada; PCTR e LTR são padrão cirúrgico.",
+    "classifications": [
+      {
+        "name": "Myer-Cotton",
+        "author_year": "Myer, O'Connor, Cotton, 1994",
+        "description": "Grau I: <50% obstrução; Grau II: 51-70%; Grau III: 71-99%; Grau IV: sem lúmen detectável.",
+        "pediatric_validated": true
+      },
+      {
+        "name": "ELS (European Laryngological Society)",
+        "author_year": "Monnier et al., 2015",
+        "description": "Padronização para estenose laringotraqueal (extensão, sítio, etiologia, comorbidades).",
+        "pediatric_validated": true
+      }
+    ],
+    "red_flags": [
+      "Estridor bifásico em paciente com história de intubação",
+      "Falha de extubação repetida",
+      "Estridor com piora rápida em quadro infeccioso (estenose limita reserva)"
+    ],
+    "key_exams": [
+      "Microlaringoscopia + broncoscopia (padrão diagnóstico)",
+      "Avaliação de extensão proximal-distal e mobilidade de pregas vocais",
+      "TC para casos extensos (planejamento cirúrgico)",
+      "Avaliação de DRGE e EoE concomitantes"
+    ],
+    "common_pitfalls": [
+      "Tratar como crupe recorrente sem investigar via aérea",
+      "Endoscopia ambulatorial sem capacidade de manobra cirúrgica",
+      "Não documentar grau, extensão e estado de traqueostomia"
+    ],
+    "associated_pathways": [
+      "falha-extubacao",
+      "estridor-no-lactente"
+    ],
+    "associated_procedures": [
+      "ltr-laringotracheal-reconstruction",
+      "pctr-cricotracheal-resection",
+      "dilatacao-endoscopica"
+    ],
+    "associated_instruments": [
+      "myer-cotton",
+      "cali"
+    ],
+    "epidemiology_global": "Incidência relacionada a UTI neonatal/pediátrica e duração de intubação. Maior causa de traqueostomia adquirida em crianças.",
+    "epidemiology_brazil": "Schweiger et al. (HCPA) descreveram fatores de risco e desfechos em coorte brasileira; carência de dados populacionais.",
+    "sources": [
+      {
+        "title": "Proposed grading system for subglottic stenosis",
+        "authors": "Myer CM, O'Connor DM, Cotton RT",
+        "journal": "Ann Otol Rhinol Laryngol",
+        "year": 1994,
+        "source_type": "primary"
+      },
+      {
+        "title": "Proposal of a new classification for optimising outcome assessment of paediatric laryngotracheal stenoses",
+        "authors": "Monnier P, et al.",
+        "journal": "Eur Arch Otorhinolaryngol",
+        "year": 2015,
+        "source_type": "consensus"
+      }
+    ]
+  },
+  {
+    "id": "estenose-traqueal-congenita",
+    "slug": "estenose-traqueal-congenita",
+    "title_pt": "Estenose traqueal congênita (anéis cartilaginosos completos)",
+    "title_en": "Congenital tracheal stenosis (complete cartilaginous rings)",
+    "audience": "pediatric",
+    "domain": "trachea",
+    "age_range": [
+      "neonate",
+      "infant",
+      "toddler"
+    ],
+    "summary": "Anéis traqueais completos em formato de \"O\" causam estreitamento fixo. Slide tracheoplasty é tratado como padrão-ouro contemporâneo. Forte associação com sling de artéria pulmonar.",
+    "confidence": "high",
+    "confidence_rationale": "Slide tracheoplasty consolidada por séries multicêntricas e meta-análises recentes.",
+    "classifications": [
+      {
+        "name": "Cantrell-Guild (extensão)",
+        "author_year": "Cantrell, 1964",
+        "description": "Generalizada / em funil / segmentar.",
+        "pediatric_validated": true
+      }
+    ],
+    "red_flags": [
+      "Sibilância fixa não responsiva a broncodilatador",
+      "Estridor bifásico em criança com cardiopatia",
+      "Hipoxemia sem causa pulmonar evidente"
+    ],
+    "key_exams": [
+      "Broncoscopia + TC com reconstrução 3D",
+      "Ecocardiograma para sling de artéria pulmonar",
+      "Avaliação cardíaca completa pré-operatória"
+    ],
+    "common_pitfalls": [
+      "Atrasar diagnóstico interpretando como asma de difícil controle",
+      "Tentar dilatação como primeira linha (alto risco)",
+      "Não reconhecer associação com cardiopatia"
+    ],
+    "associated_pathways": [],
+    "associated_procedures": [
+      "slide-tracheoplasty"
+    ],
+    "associated_instruments": [],
+    "epidemiology_global": "Rara: estimativa de 1:64.500 nascidos vivos.",
+    "epidemiology_brazil": "Casos esporádicos publicados em centros pediátricos.",
+    "sources": [
+      {
+        "title": "Slide tracheoplasty for long-segment congenital tracheal stenosis",
+        "authors": "Multiple",
+        "journal": "J Thorac Cardiovasc Surg",
+        "year": 2020,
+        "source_type": "review"
+      }
+    ]
+  },
+  {
+    "id": "fenda-laringea",
+    "slug": "fenda-laringea",
+    "title_pt": "Fenda laríngea",
+    "title_en": "Laryngeal cleft",
+    "audience": "pediatric",
+    "domain": "larynx",
+    "age_range": [
+      "neonate",
+      "infant",
+      "toddler"
+    ],
+    "summary": "Comunicação anormal entre laringe/traqueia e esôfago. Causa importante de aspiração silenciosa, tosse com alimentação e pneumonias de repetição. O sistema Benjamin-Inglis (Tipos I a IV) por profundidade da fenda é a referência prática.",
+    "confidence": "high",
+    "confidence_rationale": "Classificação Benjamin-Inglis universalmente referenciada; correlação clara entre tipo e estratégia cirúrgica.",
+    "classifications": [
+      {
+        "name": "Benjamin-Inglis",
+        "author_year": "Benjamin & Inglis, 1989",
+        "description": "Tipo I: supraglótica; Tipo II: cricoide parcial; Tipo III: cricoide total ± traqueia cervical; Tipo IV: estende-se ao tórax.",
+        "pediatric_validated": true
+      }
+    ],
+    "red_flags": [
+      "Aspiração com alimentação líquida persistente após 6 meses",
+      "Pneumonia de repetição em criança sem outra causa óbvia",
+      "Tosse e cianose imediatas ao primeiro gole"
+    ],
+    "key_exams": [
+      "Microlaringoscopia + palpação da comissura interaritenoide (padrão-ouro)",
+      "FEES e VFSS para avaliar aspiração funcional",
+      "Broncoscopia rígida para tipos profundos",
+      "TC de tórax para extensão (tipos III/IV)"
+    ],
+    "common_pitfalls": [
+      "Diagnóstico tardio por endoscopia sem palpação direta",
+      "Confundir aspiração funcional com fenda anatômica e vice-versa",
+      "Subestimar tipos I que respondem a injeção de bulking"
+    ],
+    "associated_pathways": [
+      "aspiracao-cronica"
+    ],
+    "associated_procedures": [
+      "correcao-fenda-laringea-endoscopica"
+    ],
+    "associated_instruments": [
+      "pedi-eat-10",
+      "fees-pediatrico"
+    ],
+    "epidemiology_global": "Rara, ~0.1% dos quadros aerodigestivos pediátricos referenciados. Frequentemente subdiagnosticada.",
+    "epidemiology_brazil": "Sem dados populacionais. Casos individuais publicados em centros terciários.",
+    "sources": [
+      {
+        "title": "Minor laryngeal cleft (type I)",
+        "authors": "Benjamin B, Inglis A",
+        "journal": "Ann Otol Rhinol Laryngol",
+        "year": 1989,
+        "source_type": "primary"
+      }
+    ]
+  },
+  {
+    "id": "laringomalacia",
+    "slug": "laringomalacia",
+    "title_pt": "Laringomalácia",
+    "title_en": "Laryngomalacia",
+    "audience": "pediatric",
+    "domain": "larynx",
+    "age_range": [
+      "neonate",
+      "infant"
+    ],
+    "summary": "Causa mais comum de estridor em lactentes. Colapso dinâmico das estruturas supraglóticas durante a inspiração. A maioria dos casos melhora entre 12 e 24 meses; uma minoria significativa (graves) exige avaliação multiprofissional e supraglotoplastia.",
+    "confidence": "high",
+    "confidence_rationale": "Classificações Olney/Shah/Groningen recorrentes em diretrizes e revisões; supraglotoplastia é padrão de cuidado em casos graves.",
+    "classifications": [
+      {
+        "name": "Olney (tipos anatômicos)",
+        "author_year": "Olney, 1999",
+        "description": "Tipo 1: prolapso de mucosa aritenoide; Tipo 2: pregas ariepiglóticas curtas; Tipo 3: deslocamento posterior da epiglote.",
+        "pediatric_validated": true
+      },
+      {
+        "name": "Shah/SWAN (gravidade clínica)",
+        "author_year": "Shah, 2007",
+        "description": "Estratifica leve / moderada / grave por estridor, alimentação, ganho ponderal, cianose e apneia.",
+        "pediatric_validated": true
+      },
+      {
+        "name": "Groningen (simplificada)",
+        "author_year": "van der Heijden, 2015",
+        "description": "Sistema unificado moderno: leve / moderado / grave com critérios objetivos.",
+        "pediatric_validated": true
+      }
+    ],
+    "red_flags": [
+      "Cianose ou apneia",
+      "Dificuldade alimentar com falha de ganho ponderal",
+      "Pectus excavatum em evolução",
+      "Cor pulmonale (raro mas crítico)",
+      "SatO2 < 90% no sono"
+    ],
+    "key_exams": [
+      "Nasofibrolaringoscopia em vigília (padrão diagnóstico)",
+      "DISE (drug-induced sleep endoscopy) em casos atípicos",
+      "Polissonografia se suspeita de SAOS",
+      "Broncoscopia para excluir lesão sincrônica",
+      "VFSS/FEES se aspiração suspeita"
+    ],
+    "common_pitfalls": [
+      "Atribuir todo estridor à laringomalácia sem broncoscopia em casos atípicos",
+      "Subestimar a sobreposição com DRGE — tratar empiricamente quando indicado",
+      "Indicar supraglotoplastia precoce em quadros leves que melhorariam espontaneamente"
+    ],
+    "associated_pathways": [
+      "estridor-no-lactente"
+    ],
+    "associated_procedures": [
+      "supraglotoplastia"
+    ],
+    "associated_instruments": [],
+    "epidemiology_global": "Causa de 60-75% dos estridores neonatais persistentes. Incidência precisa não definida; estudos epidemiológicos populacionais são escassos.",
+    "epidemiology_brazil": "Sem censo nacional. Séries hospitalares brasileiras (UNICAMP, HCPA) reproduzem a mesma proporção entre estridores avaliados.",
+    "sources": [
+      {
+        "title": "Type-based classification of laryngomalacia",
+        "authors": "Olney DR, Greinwald JH, Smith RJ, Bauman NM",
+        "journal": "Laryngoscope",
+        "year": 1999,
+        "pmid": "10580724",
+        "source_type": "primary"
+      },
+      {
+        "title": "Severity assessment scale for laryngomalacia",
+        "authors": "Shah RK, et al.",
+        "journal": "Otolaryngol Head Neck Surg",
+        "year": 2007,
+        "source_type": "primary"
+      },
+      {
+        "title": "Groningen Laryngomalacia Classification System",
+        "authors": "van der Heijden M, et al.",
+        "year": 2015,
+        "source_type": "primary"
+      }
+    ]
+  },
+  {
+    "id": "lesao-pos-intubacao",
+    "slug": "lesao-pos-intubacao",
+    "title_pt": "Lesão laringotraqueal pós-intubação",
+    "title_en": "Post-intubation laryngotracheal injury",
+    "audience": "pediatric",
+    "domain": "larynx",
+    "age_range": [
+      "neonate",
+      "infant",
+      "toddler",
+      "school"
+    ],
+    "summary": "Lesão aguda da mucosa laríngea/cricoide secundária à intubação. Fator de risco consistente: duração da intubação. CALI mostrou valor para predizer evolução desfavorável em crianças com lesão aguda.",
+    "confidence": "high",
+    "confidence_rationale": "Estudos brasileiros (HCPA) e internacionais convergem em fatores de risco e valor prognóstico do CALI.",
+    "classifications": [
+      {
+        "name": "CALI (Classification of Acute Laryngeal Injury)",
+        "author_year": "Schweiger et al., 2017",
+        "description": "Estratifica achados de mucosa, edema, ulceração e granulação no momento da extubação para predizer evolução para estenose.",
+        "pediatric_validated": true
+      }
+    ],
+    "red_flags": [
+      "Estridor pós-extubação com cianose ou tiragem",
+      "Necessidade de re-intubação em <72h",
+      "Falha de extubação em criança previamente bem"
+    ],
+    "key_exams": [
+      "Endoscopia flexível em <72h após extubação difícil ou prolongada",
+      "Microlaringoscopia se evolução desfavorável",
+      "Documentação fotográfica seriada"
+    ],
+    "common_pitfalls": [
+      "Aguardar evolução clínica antes de endoscopia (perde janela de prevenção)",
+      "Tratar empiricamente como crupe sem visualização",
+      "Não separar lesão aguda (reversível) de estenose estabelecida"
+    ],
+    "associated_pathways": [
+      "falha-extubacao"
+    ],
+    "associated_procedures": [
+      "dilatacao-endoscopica",
+      "ltr-laringotracheal-reconstruction"
+    ],
+    "associated_instruments": [
+      "cali"
+    ],
+    "epidemiology_global": "Lesão aguda detectável em até 50% das intubações >72h em crianças. Progressão a estenose: ~10-15%.",
+    "epidemiology_brazil": "Casuística HCPA/UFRGS estabelece referência nacional.",
+    "sources": [
+      {
+        "title": "Acute laryngeal injuries after endotracheal intubation in children",
+        "authors": "Schweiger C, et al.",
+        "journal": "Int J Pediatr Otorhinolaryngol",
+        "year": 2017,
+        "source_type": "primary"
+      }
+    ]
+  },
+  {
+    "id": "traqueomalacia",
+    "slug": "traqueomalacia",
+    "title_pt": "Traqueomalácia e broncomalácia",
+    "title_en": "Tracheomalacia and bronchomalacia",
+    "audience": "pediatric",
+    "domain": "trachea",
+    "age_range": [
+      "neonate",
+      "infant",
+      "toddler",
+      "school"
+    ],
+    "summary": "Colapso dinâmico de via aérea central. Pode ser primária, secundária (compressão vascular, EA/FTE), localizada ou difusa. Aortopexia é a cirurgia mais usada; séries recentes mostram papel crescente de tracheopexy e abordagens combinadas. Revisão recente: melhora respiratória em ~80% após cirurgia em malácia grave.",
+    "confidence": "high",
+    "confidence_rationale": "Convergência entre revisões e séries recentes sobre indicação cirúrgica e desfechos.",
+    "classifications": [
+      {
+        "name": "Localização (anatômica)",
+        "author_year": "Consenso operacional",
+        "description": "Cervical / torácica / carenal / brônquica; difusa vs. focal.",
+        "pediatric_validated": true
+      }
+    ],
+    "red_flags": [
+      "Tosse em barking severa com dispneia",
+      "BRUE (eventos breves de aparente sufocamento)",
+      "Falha em ganho ponderal por exaustão respiratória",
+      "Pneumonia de repetição com mesma topografia"
+    ],
+    "key_exams": [
+      "Broncoscopia dinâmica em ventilação espontânea (padrão-ouro)",
+      "TC dinâmica (inspiração/expiração) para extensão",
+      "Avaliação cardíaca para compressão vascular associada"
+    ],
+    "common_pitfalls": [
+      "Broncoscopia sob relaxante muscular (subestima colapso)",
+      "Atribuir sintomas só a refluxo sem avaliação dinâmica",
+      "Não rastrear sling de artéria pulmonar / ducto arterioso compressivo"
+    ],
+    "associated_pathways": [
+      "aspiracao-cronica"
+    ],
+    "associated_procedures": [
+      "aortopexia",
+      "tracheopexy-posterior"
+    ],
+    "associated_instruments": [],
+    "epidemiology_global": "Prevalência precisa desconhecida; alta em prematuros e em pacientes com EA/FTE.",
+    "epidemiology_brazil": "Sem censo nacional.",
+    "sources": [
+      {
+        "title": "Outcomes of surgical treatment for severe tracheomalacia",
+        "authors": "Multiple",
+        "journal": "Pediatric Pulmonology",
+        "year": 2024,
+        "source_type": "review"
+      }
+    ]
+  }
+]

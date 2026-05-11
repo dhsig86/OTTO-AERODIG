@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import { fetchNetwork } from '../services/api';
 import type { NetworkNode } from '../types/content';
 import { ConfidenceBadge } from '../components/ConfidenceBadge';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 export function NetworkPage() {
+  useDocumentTitle('Mapa de rede');
   const [items, setItems] = useState<NetworkNode[]>([]);
   useEffect(() => {
     fetchNetwork().then(setItems).catch(() => setItems([]));

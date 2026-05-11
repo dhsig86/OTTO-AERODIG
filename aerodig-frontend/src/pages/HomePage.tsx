@@ -11,6 +11,7 @@ import {
   Calculator,
 } from 'lucide-react';
 import { isStaticMode } from '../services/api';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 const TILES = [
   { to: '/atlas', label: 'Atlas de condições', desc: 'Verbetes curados com classificações, red flags e exames-chave.', icon: BookOpen, color: 'text-otto-dark' },
@@ -25,6 +26,7 @@ const TILES = [
 ];
 
 export function HomePage() {
+  useDocumentTitle('');
   return (
     <div>
       <header className="mb-8">
