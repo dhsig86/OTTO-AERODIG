@@ -150,13 +150,19 @@ const REQUIRED_BASE: (keyof BaseEntity)[] = [
 const CONFIDENCE_VALUES = new Set(['high', 'moderate', 'low']);
 const AUDIENCE_VALUES = new Set(['pediatric', 'adult', 'both']);
 
-function checkBaseEntity(collection: BaseEntity[], name: string) {
+// NOTE: helpers recebem um getter (() => BaseEntity[]) em vez da coleção diretamente,
+// pois são chamados em describe-time (antes do beforeAll preencher as variáveis).
+// O getter é invocado dentro de cada it(), quando os dados já estão disponíveis.
+
+function checkBaseEntity(getCollection: () => BaseEntity[], name: string) {
   describe(`${name} — campos BaseEntity`, () => {
     it('tem pelo menos 1 item', () => {
+      const collection = getCollection();
       expect(collection.length, `${name} está vazio`).toBeGreaterThan(0);
     });
 
     it('todos os itens têm campos obrigatórios não-nulos', () => {
+      const collection = getCollection();
       for (const item of collection) {
         for (const field of REQUIRED_BASE) {
           expect(
@@ -168,6 +174,7 @@ function checkBaseEntity(collection: BaseEntity[], name: string) {
     });
 
     it('confidence é "high" | "moderate" | "low"', () => {
+      const collection = getCollection();
       for (const item of collection) {
         expect(
           CONFIDENCE_VALUES.has(item.confidence),
@@ -177,6 +184,7 @@ function checkBaseEntity(collection: BaseEntity[], name: string) {
     });
 
     it('audience é "pediatric" | "adult" | "both"', () => {
+      const collection = getCollection();
       for (const item of collection) {
         expect(
           AUDIENCE_VALUES.has(item.audience),
@@ -186,6 +194,7 @@ function checkBaseEntity(collection: BaseEntity[], name: string) {
     });
 
     it('sources é um array (pode estar vazio apenas em exceções)', () => {
+      const collection = getCollection();
       for (const item of collection) {
         expect(Array.isArray(item.sources), `${name}[${item.slug}].sources não é array`).toBe(
           true,
@@ -195,8 +204,9 @@ function checkBaseEntity(collection: BaseEntity[], name: string) {
   });
 }
 
-function checkNoDuplicateSlugs(collection: BaseEntity[], name: string) {
+function checkNoDuplicateSlugs(getCollection: () => BaseEntity[], name: string) {
   it(`${name} — sem slugs duplicados`, () => {
+    const collection = getCollection();
     const slugs = collection.map((i) => i.slug);
     const unique = new Set(slugs);
     expect(
@@ -209,13 +219,11 @@ function checkNoDuplicateSlugs(collection: BaseEntity[], name: string) {
 // ─── Verifica todas as coleções ───────────────────────────────────────────────
 
 describe('conditions', () => {
-  beforeAll(() => { /* deps já carregadas */ });
-
   checkBaseEntity(
-    conditions as unknown as BaseEntity[],
+    () => conditions as unknown as BaseEntity[],
     'conditions',
   );
-  checkNoDuplicateSlugs(conditions as unknown as BaseEntity[], 'conditions');
+  checkNoDuplicateSlugs(() => conditions as unknown as BaseEntity[], 'conditions');
 
   it('todos têm summary não-vazio', () => {
     for (const c of conditions) {
@@ -233,8 +241,8 @@ describe('conditions', () => {
 });
 
 describe('pathways', () => {
-  checkBaseEntity(pathways as unknown as BaseEntity[], 'pathways');
-  checkNoDuplicateSlugs(pathways as unknown as BaseEntity[], 'pathways');
+  checkBaseEntity(() => pathways as unknown as BaseEntity[], 'pathways');
+  checkNoDuplicateSlugs(() => pathways as unknown as BaseEntity[], 'pathways');
 
   it('cada pathway tem exatamente 1 nó do tipo "entry"', () => {
     for (const p of pathways) {
@@ -282,8 +290,8 @@ describe('pathways', () => {
 });
 
 describe('instruments', () => {
-  checkBaseEntity(instruments as unknown as BaseEntity[], 'instruments');
-  checkNoDuplicateSlugs(instruments as unknown as BaseEntity[], 'instruments');
+  checkBaseEntity(() => instruments as unknown as BaseEntity[], 'instruments');
+  checkNoDuplicateSlugs(() => instruments as unknown as BaseEntity[], 'instruments');
 
   it('instrument_type é um dos valores válidos', () => {
     const VALID = new Set(['screening', 'functional', 'outcome', 'histologic', 'endoscopic']);
@@ -300,8 +308,8 @@ describe('instruments', () => {
 });
 
 describe('calculators', () => {
-  checkBaseEntity(calculators as unknown as BaseEntity[], 'calculators');
-  checkNoDuplicateSlugs(calculators as unknown as BaseEntity[], 'calculators');
+  checkBaseEntity(() => calculators as unknown as BaseEntity[], 'calculators');
+  checkNoDuplicateSlugs(() => calculators as unknown as BaseEntity[], 'calculators');
 
   it('todos têm pelo menos 1 input e 1 output', () => {
     for (const c of calculators) {
@@ -350,11 +358,39 @@ describe('calculators', () => {
       expect(brands.has(expected), `brand "${expected}" ausente na tabela`).toBe(true);
     }
   });
+
+  it('myer-cotton: age_bands do JSON correspondem às keys do MYER_COTTON_EXPECTED (regressão key mismatch)', () => {
+    // Esta é a barreira anti-regressão para o bug "Pré-escolar" vs "Pre-escolar".
+    // Se o JSON usar um acento que o componente não usa, os testes de lógica passam
+    // mas o calculador quebra em runtime (nenhum expected_id_mm encontrado).
+    const EXPECTED_KEYS = [
+      'Neonato',
+      'Lactente (<6m)',
+      'Lactente (6-12m)',
+      'Toddler (1-3a)',
+      'Pre-escolar',   // ← sem acento — deve bater com MYER_COTTON_EXPECTED
+      'Escolar',
+      'Adolescente',
+    ];
+    const mc = calculators.find((c) => c.slug === 'myer-cotton-calc');
+    expect(mc).toBeDefined();
+    const ageBands = (mc!.reference_table ?? []).map((r) => r['age_band'] as string);
+    for (const key of EXPECTED_KEYS) {
+      expect(
+        ageBands,
+        `myer-cotton reference_table não contém age_band "${key}" — possível key mismatch`,
+      ).toContain(key);
+    }
+    // Garante que a versão com acento NÃO está presente
+    expect(ageBands, 'age_band "Pré-escolar" (com acento) não deve existir no JSON').not.toContain(
+      'Pré-escolar',
+    );
+  });
 });
 
 describe('procedures', () => {
-  checkBaseEntity(procedures as unknown as BaseEntity[], 'procedures');
-  checkNoDuplicateSlugs(procedures as unknown as BaseEntity[], 'procedures');
+  checkBaseEntity(() => procedures as unknown as BaseEntity[], 'procedures');
+  checkNoDuplicateSlugs(() => procedures as unknown as BaseEntity[], 'procedures');
 
   it('approach é um dos valores válidos', () => {
     const VALID = new Set(['endoscopic', 'open', 'adjuvant', 'combined']);
@@ -377,8 +413,8 @@ describe('procedures', () => {
 });
 
 describe('frontier', () => {
-  checkBaseEntity(frontier as unknown as BaseEntity[], 'frontier');
-  checkNoDuplicateSlugs(frontier as unknown as BaseEntity[], 'frontier');
+  checkBaseEntity(() => frontier as unknown as BaseEntity[], 'frontier');
+  checkNoDuplicateSlugs(() => frontier as unknown as BaseEntity[], 'frontier');
 
   it('maturity é um dos valores válidos', () => {
     const VALID = new Set([
@@ -395,8 +431,8 @@ describe('frontier', () => {
 });
 
 describe('network nodes', () => {
-  checkBaseEntity(network as unknown as BaseEntity[], 'network');
-  checkNoDuplicateSlugs(network as unknown as BaseEntity[], 'network');
+  checkBaseEntity(() => network as unknown as BaseEntity[], 'network');
+  checkNoDuplicateSlugs(() => network as unknown as BaseEntity[], 'network');
 
   it('country e city não são vazios', () => {
     for (const n of network) {
@@ -407,8 +443,8 @@ describe('network nodes', () => {
 });
 
 describe('news', () => {
-  checkBaseEntity(news as unknown as BaseEntity[], 'news');
-  checkNoDuplicateSlugs(news as unknown as BaseEntity[], 'news');
+  checkBaseEntity(() => news as unknown as BaseEntity[], 'news');
+  checkNoDuplicateSlugs(() => news as unknown as BaseEntity[], 'news');
 
   it('relevance_score está entre 0 e 1', () => {
     for (const n of news) {
@@ -426,8 +462,8 @@ describe('news', () => {
 });
 
 describe('events', () => {
-  checkBaseEntity(events as unknown as BaseEntity[], 'events');
-  checkNoDuplicateSlugs(events as unknown as BaseEntity[], 'events');
+  checkBaseEntity(() => events as unknown as BaseEntity[], 'events');
+  checkNoDuplicateSlugs(() => events as unknown as BaseEntity[], 'events');
 
   it('starts_on é uma data ISO-8601 válida', () => {
     for (const e of events) {
@@ -500,18 +536,4 @@ describe('cross-references (condition → pathway / procedure / instrument)', ()
   });
 });
 
-// ─── Arquivos de detalhe de conditions individuais ────────────────────────────
-
-describe('conditions — arquivos JSON individuais em /data/conditions/', () => {
-  it('existe um arquivo JSON para cada condition slug', () => {
-    for (const c of conditions) {
-      let parsed: Record<string, unknown>;
-      try {
-        parsed = load(`conditions/${c.slug}.json`);
-      } catch {
-        throw new Error(`Arquivo /data/conditions/${c.slug}.json não encontrado`);
-      }
-      expect(parsed.slug, `${c.slug}.json: slug divergente`).toBe(c.slug);
-    }
-  });
-});
+// ─── Arquivos de detalhe de condition

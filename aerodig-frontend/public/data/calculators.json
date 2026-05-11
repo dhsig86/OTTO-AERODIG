@@ -20,7 +20,7 @@
           "Tracoe (Biesalski)",
           "Portex",
           "Rusch",
-          "Jackson (metalica)"
+          "Jackson (metálica)"
         ],
         "notes": "Selecione a marca da canula atual ou desejada."
       },
@@ -267,7 +267,7 @@
         "age_band": "Adulto"
       },
       {
-        "brand": "Jackson (metalica)",
+        "brand": "Jackson (metálica)",
         "size": "#0",
         "id_mm": "3.5",
         "od_mm": "5.0",
@@ -275,7 +275,7 @@
         "age_band": "Lactente"
       },
       {
-        "brand": "Jackson (metalica)",
+        "brand": "Jackson (metálica)",
         "size": "#1",
         "id_mm": "4.0",
         "od_mm": "5.5",
@@ -283,7 +283,7 @@
         "age_band": "Lactente/toddler"
       },
       {
-        "brand": "Jackson (metalica)",
+        "brand": "Jackson (metálica)",
         "size": "#2",
         "id_mm": "4.5",
         "od_mm": "6.0",
@@ -291,7 +291,7 @@
         "age_band": "Toddler"
       },
       {
-        "brand": "Jackson (metalica)",
+        "brand": "Jackson (metálica)",
         "size": "#3",
         "id_mm": "5.0",
         "od_mm": "7.0",
@@ -299,7 +299,7 @@
         "age_band": "Pre-escolar"
       },
       {
-        "brand": "Jackson (metalica)",
+        "brand": "Jackson (metálica)",
         "size": "#4",
         "id_mm": "5.5",
         "od_mm": "8.0",
@@ -307,7 +307,7 @@
         "age_band": "Escolar"
       },
       {
-        "brand": "Jackson (metalica)",
+        "brand": "Jackson (metálica)",
         "size": "#5",
         "id_mm": "6.5",
         "od_mm": "9.0",
@@ -315,7 +315,7 @@
         "age_band": "Adolescente/adulto pequeno"
       },
       {
-        "brand": "Jackson (metalica)",
+        "brand": "Jackson (metálica)",
         "size": "#6",
         "id_mm": "7.5",
         "od_mm": "10.0",
@@ -323,7 +323,7 @@
         "age_band": "Adulto"
       },
       {
-        "brand": "Jackson (metalica)",
+        "brand": "Jackson (metálica)",
         "size": "#7",
         "id_mm": "8.5",
         "od_mm": "11.0",
@@ -331,7 +331,7 @@
         "age_band": "Adulto"
       },
       {
-        "brand": "Jackson (metalica)",
+        "brand": "Jackson (metálica)",
         "size": "#8",
         "id_mm": "9.5",
         "od_mm": "12.0",

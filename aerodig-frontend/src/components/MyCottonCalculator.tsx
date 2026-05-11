@@ -138,7 +138,7 @@ export function MyCottonCalculator({ calc }: { calc: Calculator }) {
           </select>
           <span className="text-xs text-otto-muted mt-1 block">
             Tubo OT esperado:{' '}
-            <strong className="text-otto-dark">{expected.expected} mm DI</strong>
+            <strong className="text-otto-dark">{expected.expected.toFixed(1)} mm DI</strong>
             <span className="text-otto-muted"> (faixa {expected.range})</span>
           </span>
         </label>
@@ -184,7 +184,7 @@ export function MyCottonCalculator({ calc }: { calc: Calculator }) {
           aria-live="polite"
         >
           <div className="flex flex-wrap items-baseline gap-3 mb-1.5">
-            <span className={`text-2xl font-bold ${meta.color}`}>{meta.gradeLabel}</span>
+            <span className={`text-2xl font-bold ${meta.color}`}>{meta.label}</span>
             {!noLumen && result.reductionPct < 100 && (
               <span className="text-sm text-otto-muted">
                 — redução estimada{' '}
@@ -242,5 +242,4 @@ export function MyCottonCalculator({ calc }: { calc: Calculator }) {
 
       <ReferencesPanel sources={calc.sources} className="mt-6" />
     </div>
-  );
-}
+ 

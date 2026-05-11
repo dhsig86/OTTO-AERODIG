@@ -92,6 +92,11 @@ function computeLayout(
   nodes: PathwayNode[],
   edges: PathwayEdge[],
 ): { nodeLayouts: LayoutNode[]; svgWidth: number; svgHeight: number } {
+  // Guard: nenhum nó → retorna SVG vazio
+  if (nodes.length === 0) {
+    return { nodeLayouts: [], svgWidth: 200, svgHeight: 100 };
+  }
+
   // Mapa de filhos e pais
   const children = new Map<string, string[]>();
   const parents = new Map<string, string[]>();
@@ -360,7 +365,13 @@ export function PathwayDiagram({ nodes, edges }: PathwayDiagramProps) {
     return m;
   }, [nodeLayouts]);
 
-  if (nodes.length === 0) return null;
+  if (nodes.length === 0) {
+    return (
+      <div className="overflow-x-auto rounded-xl border border-otto-border bg-white/60 p-3">
+        <svg width={200} height={100} aria-label="Diagrama vazio" role="img" />
+      </div>
+    );
+  }
 
   return (
     <div className="overflow-x-auto rounded-xl border border-otto-border bg-white/60 p-3">
@@ -399,16 +410,4 @@ export function PathwayDiagram({ nodes, edges }: PathwayDiagramProps) {
         {Object.entries(NODE_TYPE_LABEL).map(([type, label]) => {
           const s = NODE_STYLE[type] ?? NODE_STYLE.default;
           return (
-            <span key={type} className="flex items-center gap-1.5 text-xs text-otto-muted">
-              <span
-                className="inline-block w-3 h-3 rounded-sm border"
-                style={{ background: s.fill, borderColor: s.stroke }}
-              />
-              {label}
-            </span>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
+            <span key={t
