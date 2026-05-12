@@ -421,4 +421,3 @@ export function PathwayDiagram({ nodes, edges }: PathwayDiagramProps) {
     </div>
   );
 }
-                                            

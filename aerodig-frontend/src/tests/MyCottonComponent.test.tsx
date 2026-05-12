@@ -145,4 +145,6 @@ describe('MyCottonCalculator — interação', () => {
 describe('MyCottonCalculator — ConfidenceBadge', () => {
   it('exibe badge de alta confiança', () => {
     renderCalc();
-    expect(screen.getByTestId('confidence-badge-high')).toBeInTheDocument
+    expect(screen.getByTestId('confidence-badge-high')).toBeInTheDocument();
+  });
+});

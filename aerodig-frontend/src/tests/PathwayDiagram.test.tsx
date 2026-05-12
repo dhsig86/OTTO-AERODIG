@@ -113,4 +113,6 @@ describe('PathwayDiagram — edge cases', () => {
           edges={[]}
         />,
       ),
-    ).not.toThrow()
+    ).not.toThrow();
+  });
+});
