@@ -55,4 +55,57 @@ export function Sidebar() {
     <aside className="w-56 shrink-0 border-r border-otto-border bg-otto-surface px-3 py-6 hidden md:block">
       <div className="mb-6 px-2">
         <p className="text-otto-dark font-bold leading-tight">OTTO</p>
-  
+        <p className="text-xs text-otto-muted">Aerodigestive Hub</p>
+      </div>
+      <NavLinks />
+    </aside>
+  );
+}
+
+/** Header com hamburger — visivel apenas em mobile (< md) */
+export function MobileHeader() {
+  const [open, setOpen] = useState(false);
+  const close = () => setOpen(false);
+
+  return (
+    <>
+      <header className="md:hidden flex items-center justify-between px-4 py-3 border-b border-otto-border bg-otto-surface sticky top-0 z-30">
+        <div>
+          <p className="text-otto-dark font-bold text-sm leading-tight">OTTO</p>
+          <p className="text-[10px] text-otto-muted leading-none">Aerodigestive Hub</p>
+        </div>
+        <button
+          onClick={() => setOpen((v) => !v)}
+          aria-label={open ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={open}
+          className="p-2 rounded-lg text-otto-muted hover:bg-otto-bg"
+        >
+          {open ? <X size={20} /> : <Menu size={20} />}
+        </button>
+      </header>
+
+      {/* Overlay + Drawer */}
+      {open && (
+        <>
+          <div
+            className="md:hidden fixed inset-0 bg-black/30 z-40"
+            onClick={close}
+            aria-hidden="true"
+          />
+          <div className="md:hidden fixed top-0 left-0 h-full w-64 bg-otto-surface border-r border-otto-border z-50 px-3 py-6 overflow-y-auto animate-fade-in">
+            <div className="mb-6 px-2 flex items-center justify-between">
+              <div>
+                <p className="text-otto-dark font-bold leading-tight">OTTO</p>
+                <p className="text-xs text-otto-muted">Aerodigestive Hub</p>
+              </div>
+              <button onClick={close} aria-label="Fechar menu" className="p-1 text-otto-muted">
+                <X size={18} />
+              </button>
+            </div>
+            <NavLinks onNavigate={close} />
+          </div>
+        </>
+      )}
+    </>
+  );
+}

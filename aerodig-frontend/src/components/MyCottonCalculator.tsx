@@ -242,4 +242,5 @@ export function MyCottonCalculator({ calc }: { calc: Calculator }) {
 
       <ReferencesPanel sources={calc.sources} className="mt-6" />
     </div>
- 
+  );
+}

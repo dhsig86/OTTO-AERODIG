@@ -76,4 +76,42 @@ export function SearchPage() {
         <button
           type="submit"
           disabled={loading}
-          className="px-4 py-2 rounded
+          className="px-4 py-2 rounded-lg bg-otto-primary text-white text-sm hover:bg-otto-primary/80 disabled:opacity-40 transition-colors"
+        >
+          {loading ? 'Buscando…' : 'Buscar'}
+        </button>
+      </form>
+
+      {result && (
+        result.hits.length === 0 ? (
+          <p className="text-otto-muted text-sm">Nenhum resultado para &ldquo;{result.query}&rdquo;.</p>
+        ) : (
+          <ul className="space-y-3">
+            {result.hits.map((hit) => {
+              const { to, state } = resolveLink(hit.entity_type, hit.slug);
+              return (
+                <li key={`${hit.entity_type}-${hit.slug}`}>
+                  <Link
+                    to={to}
+                    state={state}
+                    className="card block hover:border-otto-primary/30 transition-colors"
+                  >
+                    <div className="flex items-start justify-between gap-2 mb-1">
+                      <span className="font-semibold text-sm">{hit.title_pt}</span>
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-otto-light text-otto-muted shrink-0">
+                        {TYPE_LABEL[hit.entity_type] ?? hit.entity_type}
+                      </span>
+                    </div>
+                    {hit.excerpt && (
+                      <p className="text-xs text-otto-muted line-clamp-2">{hit.excerpt}</p>
+                    )}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        )
+      )}
+    </div>
+  );
+}

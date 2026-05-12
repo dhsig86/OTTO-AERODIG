@@ -109,4 +109,10 @@ describe('PathwayDiagram — edge cases', () => {
     expect(() =>
       render(
         <PathwayDiagram
-          nodes={[{ id: 'a', 
+          nodes={[{ id: 'a', label: longLabel, node_type: 'intervention' }]}
+          edges={[]}
+        />,
+      ),
+    ).not.toThrow();
+  });
+});

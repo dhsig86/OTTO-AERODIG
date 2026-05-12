@@ -29,4 +29,12 @@ export default function App() {
           <Route path="/procedures" element={<ProceduresPage />} />
           <Route path="/frontier" element={<FrontierPage />} />
           <Route path="/network" element={<NetworkPage />} />
-          <Route path="/news" element={<NewsPage />}
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Layout>
+    </ErrorBoundary>
+  );
+}

@@ -410,4 +410,16 @@ export function PathwayDiagram({ nodes, edges }: PathwayDiagramProps) {
         {Object.entries(NODE_TYPE_LABEL).map(([type, label]) => {
           const s = NODE_STYLE[type] ?? NODE_STYLE.default;
           return (
-            <span key={t
+            <span key={type} className="flex items-center gap-1.5 text-xs text-otto-muted">
+              <span
+                className="inline-block w-3 h-3 rounded-sm border"
+                style={{ background: s.fill, borderColor: s.stroke }}
+              />
+              {label}
+            </span>
+          );
+        })}
+      </div>
+    </div>
+  );
+}

@@ -49,4 +49,11 @@ describe('TracheostomyConverter', () => {
     expect(screen.getByText(/Equivalentes em outras marcas/)).toBeInTheDocument();
     // Bivona pode aparecer em mais de um lugar (select + tabela de equivalentes)
     const bivonaElements = screen.getAllByText(/Bivona/);
-    expect(bivonaElements.length).toBeGre
+    expect(bivonaElements.length).toBeGreaterThan(0);
+  });
+
+  it('exibe alerta de notas em PT-BR', () => {
+    render(<TracheostomyConverter calc={fixture} />);
+    expect(screen.getByText(/Sempre conferir rótulo/)).toBeInTheDocument();
+  });
+});

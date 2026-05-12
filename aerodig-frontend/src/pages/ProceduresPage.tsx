@@ -60,6 +60,97 @@ export function ProceduresPage() {
                     <div className="flex flex-wrap items-center gap-2 mb-0.5">
                       <h2 className="font-semibold text-base">{p.title_pt}</h2>
                       <ConfidenceBadge level={p.confidence} rationale={p.confidence_rationale} />
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-otto-light text-otto-muted font-medium capitalize">
+                        {p.approach}
+                      </span>
                     </div>
                     <p className="text-xs text-otto-muted italic mb-1.5">{p.title_en}</p>
-                    <div 
+                  </div>
+                  <span className="text-otto-muted mt-1 shrink-0">
+                    {isOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+                  </span>
+                </div>
+              </button>
+
+              {isOpen && (
+                <div
+                  id={`procedure-detail-${p.slug}`}
+                  className="border-t border-otto-border pt-4 mt-0"
+                >
+                  {p.technique_notes && (
+                    <p className="text-sm mb-4">{p.technique_notes}</p>
+                  )}
+
+                  {p.indications.length > 0 && (
+                    <div className="mb-3">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-otto-muted mb-1">
+                        Indicações
+                      </p>
+                      <ul className="list-disc list-inside space-y-0.5">
+                        {p.indications.map((ind) => (
+                          <li key={ind} className="text-sm">{ind}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {p.contraindications.length > 0 && (
+                    <div className="mb-3">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-aerodig-flag mb-1">
+                        Contraindicações
+                      </p>
+                      <ul className="list-disc list-inside space-y-0.5">
+                        {p.contraindications.map((ci) => (
+                          <li key={ci} className="text-sm text-aerodig-flag">{ci}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Outcome set */}
+                  {Object.keys(p.outcome_set).length > 0 && (
+                    <div className="mb-4">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-otto-muted mb-2">
+                        Outcomes monitorados
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {Object.entries(p.outcome_set)
+                          .filter(([, v]) => v)
+                          .map(([k, v]) => (
+                            <div
+                              key={k}
+                              className="text-xs px-2 py-1 rounded-lg border border-otto-border bg-otto-light"
+                            >
+                              <span className="font-medium text-otto-dark">
+                                {OUTCOME_LABEL[k] ?? k}:
+                              </span>{' '}
+                              <span className="text-otto-muted">{v}</span>
+                            </div>
+                          ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {p.learning_curve_evidence && (
+                    <p className="text-xs text-otto-muted mb-3">
+                      <strong>Curva de aprendizado:</strong> {p.learning_curve_evidence}
+                    </p>
+                  )}
+
+                  {p.centers_high_volume.length > 0 && (
+                    <p className="text-xs text-otto-muted mb-3">
+                      <strong>Centros de alto volume:</strong>{' '}
+                      {p.centers_high_volume.join(', ')}
+                    </p>
+                  )}
+
+                  <ReferencesPanel sources={p.sources} />
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}

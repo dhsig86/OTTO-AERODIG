@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import { fetchInstruments } from '../services/api';
 import type { Instrument } from '../types/content';
 import { ConfidenceBadge } from '../components/ConfidenceBadge';
@@ -55,4 +55,57 @@ export function InstrumentsPage() {
               >
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex-1 min-w-0">
-                    <div className="
+                    <div className="flex flex-wrap items-center gap-2 mb-0.5">
+                      <h2 className="font-semibold text-base">{i.title_pt}</h2>
+                      <ConfidenceBadge level={i.confidence} rationale={i.confidence_rationale} />
+                      {i.pediatric_validated && (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-green-100 text-green-700 font-medium">
+                          Pediátrico ✓
+                        </span>
+                      )}
+                      {i.ptbr_validated && (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-100 text-blue-700 font-medium">
+                          PT-BR ✓
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-xs text-otto-muted italic mb-1.5">{i.title_en}</p>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-otto-light text-otto-muted">
+                      {TYPE_LABEL[i.instrument_type] ?? i.instrument_type}
+                    </span>
+                  </div>
+                  <span className="text-otto-muted mt-1 shrink-0">
+                    {isOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+                  </span>
+                </div>
+              </button>
+
+              {isOpen && (
+                <div
+                  id={`instrument-detail-${i.slug}`}
+                  className="border-t border-otto-border pt-4 mt-0"
+                >
+                  <p className="text-sm mb-3">{i.interpretation}</p>
+                  {i.notes && (
+                    <p className="text-xs text-otto-muted mb-3">{i.notes}</p>
+                  )}
+                  {i.items_count != null && (
+                    <p className="text-xs text-otto-muted mb-3">
+                      Número de itens: <strong>{i.items_count}</strong>
+                    </p>
+                  )}
+                  {i.digital_calculator_available && (
+                    <p className="text-xs text-aerodig-airway mb-3">
+                      Calculadora digital disponível neste hub.
+                    </p>
+                  )}
+                  <ReferencesPanel sources={i.sources} />
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}

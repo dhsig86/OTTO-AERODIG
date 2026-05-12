@@ -56,3 +56,15 @@ export function CalculatorsPage() {
           {current.slug === 'tracheostomy-tube-converter' ? (
             <TracheostomyConverter calc={current} />
           ) : current.slug === 'myer-cotton-calc' ? (
+            <MyCottonCalculator calc={current} />
+          ) : current.slug === 'pedi-eat10' ? (
+            <PediEat10Calculator calc={current} />
+          ) : (
+            <GenericCalculator calc={current} />
+          )}
+          <ReferencesPanel sources={current.sources} className="mt-6" />
+        </section>
+      )}
+    </div>
+  );
+}
