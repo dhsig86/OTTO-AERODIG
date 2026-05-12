@@ -34,13 +34,13 @@ const fixture: Calculator = {
   inputs: [],
   outputs: [],
   reference_table: [
-    { age_band: 'Neonato',          expected_id_mm: 3.0, expected_id_range: '2.5-3.5' },
-    { age_band: 'Lactente (<6m)',    expected_id_mm: 3.5, expected_id_range: '3.0-3.5' },
-    { age_band: 'Lactente (6-12m)', expected_id_mm: 4.0, expected_id_range: '3.5-4.0' },
-    { age_band: 'Toddler (1-3a)',   expected_id_mm: 4.5, expected_id_range: '4.0-4.5' },
-    { age_band: 'Pre-escolar',      expected_id_mm: 5.0, expected_id_range: '4.5-5.5' },
-    { age_band: 'Escolar',          expected_id_mm: 6.0, expected_id_range: '5.5-6.5' },
-    { age_band: 'Adolescente',      expected_id_mm: 7.0, expected_id_range: '6.5-7.5' },
+    { age_band: 'Neonato',          expected_id_mm: '3.0', expected_id_range: '2.5-3.5' },
+    { age_band: 'Lactente (<6m)',    expected_id_mm: '3.5', expected_id_range: '3.0-3.5' },
+    { age_band: 'Lactente (6-12m)', expected_id_mm: '4.0', expected_id_range: '3.5-4.0' },
+    { age_band: 'Toddler (1-3a)',   expected_id_mm: '4.5', expected_id_range: '4.0-4.5' },
+    { age_band: 'Pre-escolar',      expected_id_mm: '5.0', expected_id_range: '4.5-5.5' },
+    { age_band: 'Escolar',          expected_id_mm: '6.0', expected_id_range: '5.5-6.5' },
+    { age_band: 'Adolescente',      expected_id_mm: '7.0', expected_id_range: '6.5-7.5' },
   ],
   sources: [],
 };
@@ -145,6 +145,4 @@ describe('MyCottonCalculator — interação', () => {
 describe('MyCottonCalculator — ConfidenceBadge', () => {
   it('exibe badge de alta confiança', () => {
     renderCalc();
-    expect(screen.getByTestId('confidence-badge-high')).toBeInTheDocument();
-  });
-});
+    expect(screen.getByTestId('confidence-badge-high')).toBeInTheDocument

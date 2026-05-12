@@ -198,8 +198,6 @@ function SvgNode({ layout }: { layout: LayoutNode }) {
 
   if (node.node_type === 'decision') {
     // Losango para nós de decisão
-    const hw = w / 2;
-    const hh = h / 2;
     const points = `${cx},${y} ${x + w},${cy} ${cx},${y + h} ${x},${cy}`;
     return (
       <g>
@@ -423,3 +421,4 @@ export function PathwayDiagram({ nodes, edges }: PathwayDiagramProps) {
     </div>
   );
 }
+                                            

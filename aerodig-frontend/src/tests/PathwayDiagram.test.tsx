@@ -13,7 +13,7 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { PathwayDiagram } from '../components/PathwayDiagram';
-import type { PathwayNode, PathwayEdge } from '../types/content';
+import type { PathwayNode, PathwayEdge } from '../components/PathwayDiagram';
 
 // ─── Fixtures ────────────────────────────────────────────────────────────────
 
@@ -113,6 +113,4 @@ describe('PathwayDiagram — edge cases', () => {
           edges={[]}
         />,
       ),
-    ).not.toThrow();
-  });
-});
+    ).not.toThrow()
