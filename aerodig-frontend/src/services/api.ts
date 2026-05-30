@@ -13,7 +13,17 @@ import type {
   SearchResult,
 } from '../types/content';
 
-const apiUrl = import.meta.env.VITE_API_URL?.trim();
+let apiUrl = import.meta.env.VITE_API_URL?.trim();
+
+// Se não houver apiUrl definida e estiver rodando em produção (fora de localhost),
+// aplica o fallback automático para a API do Render no backend de produção.
+if (!apiUrl) {
+  if (typeof window !== 'undefined' && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1')) {
+    apiUrl = 'https://otto-aerodig-api.onrender.com';
+  } else {
+    apiUrl = 'static'; // modo estático para desenvolvimento local sem backend
+  }
+}
 
 /**
  * Modo estatico: quando VITE_API_URL nao esta definido (ou vazio), o frontend
@@ -26,7 +36,7 @@ const apiUrl = import.meta.env.VITE_API_URL?.trim();
 const STATIC_MODE = !apiUrl || apiUrl === 'static';
 
 const api = axios.create({
-  baseURL: apiUrl || '',
+  baseURL: apiUrl === 'static' ? '' : (apiUrl || ''),
   timeout: 20000,
 });
 

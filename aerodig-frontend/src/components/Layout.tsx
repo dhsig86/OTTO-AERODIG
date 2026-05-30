@@ -14,7 +14,7 @@ import { Sidebar, MobileHeader } from './Sidebar';
  */
 export function Layout({ children }: { children: ReactNode }) {
   const [params] = useSearchParams();
-  const isEmbed = params.get('embed') === '1';
+  const isEmbed = params.get('embed') === '1' || (typeof window !== 'undefined' && window.self !== window.top);
 
   if (isEmbed) {
     return (

@@ -77,8 +77,9 @@ export function computeMyerCotton(
   const clamped = Math.min(observedMm, expectedMm);
   const reductionPct = (1 - Math.pow(clamped / expectedMm, 2)) * 100;
 
-  let gradeNum: 1 | 2 | 3;
-  if (reductionPct <= 50) gradeNum = 1;
+  let gradeNum: 1 | 2 | 3 | 4;
+  if (observedMm === 0 || reductionPct >= 100) gradeNum = 4;
+  else if (reductionPct <= 50) gradeNum = 1;
   else if (reductionPct <= 70) gradeNum = 2;
   else gradeNum = 3;
 

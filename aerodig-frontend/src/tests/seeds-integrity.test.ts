@@ -536,4 +536,18 @@ describe('cross-references (condition → pathway / procedure / instrument)', ()
   });
 });
 
-// ─── Arquivos de detalhe de condition
+// ─── Arquivos de detalhe de conditions individuais ────────────────────────────
+
+describe('conditions — arquivos JSON individuais em /data/conditions/', () => {
+  it('existe um arquivo JSON para cada condition slug', () => {
+    for (const c of conditions) {
+      let parsed: Record<string, unknown>;
+      try {
+        parsed = load(`conditions/${c.slug}.json`);
+      } catch {
+        throw new Error(`Arquivo /data/conditions/${c.slug}.json não encontrado`);
+      }
+      expect(parsed.slug, `${c.slug}.json: slug divergente`).toBe(c.slug);
+    }
+  });
+});
