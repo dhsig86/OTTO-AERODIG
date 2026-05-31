@@ -22,3 +22,11 @@
     @apply bg-otto-surface border border-otto-border rounded-2xl p-5 hover:shadow-md transition-shadow;
   }
 }
+
+/* === Safe Area Insets (iPhone notch/home indicator) === */
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
