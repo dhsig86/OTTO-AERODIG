@@ -3,6 +3,7 @@ import { fetchConditions } from '../services/api';
 import type { Condition } from '../types/content';
 import { ConditionCard } from '../components/ConditionCard';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
+import { SkeletonList } from '../components/Skeleton';
 
 export function AtlasPage() {
   useDocumentTitle('Atlas de condicoes');
@@ -25,7 +26,7 @@ export function AtlasPage() {
         confiança explícito.
       </p>
 
-      {loading && <p className="text-otto-muted">Carregando…</p>}
+      {loading && <SkeletonList items={4} />}
       {error && <p className="text-red-600">Erro: {error}</p>}
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

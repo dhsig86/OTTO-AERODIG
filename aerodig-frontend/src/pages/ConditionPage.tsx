@@ -9,6 +9,7 @@ import {
 import type { Condition, Pathway, Procedure, Instrument } from '../types/content';
 import { ConfidenceBadge } from '../components/ConfidenceBadge';
 import { ReferencesPanel } from '../components/ReferencesPanel';
+import { SkeletonPage } from '../components/Skeleton';
 import { GitBranch, Scissors, Ruler } from 'lucide-react';
 
 export function ConditionPage() {
@@ -54,7 +55,7 @@ export function ConditionPage() {
   }, [c]);
 
   if (error) return <p className="text-red-600">Erro: {error}</p>;
-  if (!c) return <p className="text-otto-muted">Carregando…</p>;
+  if (!c) return <SkeletonPage />;
 
   const hasRelated =
     relPathways.length > 0 || relProcedures.length > 0 || relInstruments.length > 0;
