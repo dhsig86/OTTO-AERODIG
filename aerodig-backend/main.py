@@ -36,6 +36,7 @@ ALLOWED_ORIGINS = [
     "https://otto-aerodig.vercel.app",
     "https://otto.drdariohart.com",
     "https://ottopwa.vercel.app",
+    "https://ottos-plum.vercel.app",
     os.getenv("FRONTEND_URL", ""),
 ]
 
@@ -54,7 +55,7 @@ async def add_iframe_headers(request: Request, call_next):
     response.headers["X-Frame-Options"] = "ALLOW-FROM https://otto.drdariohart.com"
     response.headers["Content-Security-Policy"] = (
         "frame-ancestors 'self' https://otto.drdariohart.com "
-        "https://ottopwa.vercel.app https://otto-aerodig.vercel.app"
+        "https://ottopwa.vercel.app https://ottos-plum.vercel.app https://otto-aerodig.vercel.app"
     )
     return response
 
