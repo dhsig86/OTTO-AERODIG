@@ -667,6 +667,14 @@ Detalhes em [PLAN.md](./PLAN.md).
 
 ---
 
+## Changelog
+
+| Data | Mudança | Commit / Detalhe |
+|------|---------|------------------|
+| 2026-06-08 | Homologação de resiliência de cold start (timeout de 6s com fallback reativo para `STATIC_MODE` local em `api.ts`), correção do teste unitário de estenose Myer-Cotton (tubo 0mm avaliado como Grau IV/obstrução completa) e correção de mock do axios no ambiente de testes do Vitest. | [sprint atual] |
+
+---
+
 ## Comandos git no Cowork
 
 ⚠️ Push **não funciona** dentro do bash do Cowork (sem credenciais).

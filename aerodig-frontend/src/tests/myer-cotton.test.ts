@@ -161,11 +161,11 @@ describe('computeMyerCotton — entradas inválidas', () => {
     expect(computeMyerCotton(Infinity, 5.0)).toBeNull();
   });
 
-  it('tubo zero → grau III (redução 100%, clamped para III)', () => {
-    // 0mm = máxima obstrução detectável sem Grau IV manual
+  it('tubo zero → grau IV (redução 100%)', () => {
+    // 0mm = obstrução completa (sem lúmen detectável) -> Grau IV
     const r = computeMyerCotton(0, 5.0);
     expect(r).not.toBeNull();
-    expect(r!.gradeNum).toBe(3);
+    expect(r!.gradeNum).toBe(4);
     expect(r!.reductionPct).toBeCloseTo(100, 1);
   });
 
