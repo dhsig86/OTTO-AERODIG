@@ -16,7 +16,7 @@ def test_tracheostomy_converter_has_reference_table(client):
     # Deve cobrir as marcas principais
     brands = {row["brand"] for row in body["reference_table"]}
     assert "Shiley" in brands
-    assert "Jackson (metálica)" in brands
+    assert "Jackson (metalica)" in brands
     assert any("Bivona" in (b or "") for b in brands)
 
 
